@@ -41,7 +41,8 @@
               media_aspect_ratio: section.settings.image_ratio,
               show_secondary_image: section.settings.show_secondary_image,
               show_vendor: section.settings.show_vendor,
-              show_rating: section.settings.show_rating
+              show_rating: section.settings.show_rating,
+              show_badges: section.settings.show_badges
             %}
           </li>
         {% endfor %}
@@ -175,6 +176,12 @@
       "default": false,
       "label": "t:sections.related-products.settings.show_rating.label",
       "info": "t:sections.related-products.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_badges",
+      "default": false,
+      "label": "t:sections.related-products.settings.show_badges.label"
     },
     {
       "type": "header",

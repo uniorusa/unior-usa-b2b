@@ -56,7 +56,8 @@
                 card_product: block.settings.product,
                 media_aspect_ratio: 'adapt',
                 show_secondary_image: block.settings.second_image,
-                extend_height: true
+                extend_height: true,
+                show_badges: block.settings.show_badges
               %}
             {%- when 'collection' -%}
               {% render 'card-collection',
@@ -362,6 +363,12 @@
           "id": "second_image",
           "default": false,
           "label": "t:sections.collage.blocks.product.settings.second_image.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_badges",
+          "default": false,
+          "label": "t:sections.collage.blocks.product.settings.show_badges.label"
         }
       ]
     },

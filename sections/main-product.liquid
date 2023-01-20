@@ -94,7 +94,7 @@
                 {%- render 'price',
                   product: product,
                   use_variant: true,
-                  show_badges: true,
+                  show_badges: block.settings.show_badges,
                   price_class: 'price--large'
                 -%}
               </div>
@@ -384,7 +384,8 @@
                                       show_quick_add: block.settings.enable_quick_add,
                                       section_id: section.id,
                                       horizontal_class: true,
-                                      horizontal_quick_add: true
+                                      horizontal_quick_add: true,
+                                      show_badges: block.settings.show_badges
                                     %}
                                   </li>
                                 {%- endfor -%}
@@ -618,7 +619,15 @@
     {
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_badges",
+          "default": false,
+          "label": "t:sections.main-product.blocks.price.show_badges.label"
+        }
+      ]
     },
     {
       "type": "sku",
@@ -1025,6 +1034,12 @@
           "id": "make_collapsible_row",
           "default": false,
           "label": "t:sections.main-product.blocks.complementary_products.settings.make_collapsible_row.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_badges",
+          "default": false,
+          "label": "t:sections.main-product.blocks.complementary_products.settings.show_badges.label"
         },
         {
           "type": "select",

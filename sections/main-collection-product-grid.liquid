@@ -165,7 +165,8 @@
                     show_rating: section.settings.show_rating,
                     lazy_load: lazy_load,
                     show_quick_add: section.settings.enable_quick_add,
-                    section_id: section.id
+                    section_id: section.id,
+                    show_badges: section.settings.show_badges
                   %}
                 </li>
               {%- endfor -%}
@@ -246,6 +247,12 @@
       "default": false,
       "label": "t:sections.main-collection-product-grid.settings.show_rating.label",
       "info": "t:sections.main-collection-product-grid.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_badges",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.show_badges.label"
     },
     {
       "type": "checkbox",

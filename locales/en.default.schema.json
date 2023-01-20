@@ -518,6 +518,9 @@
             },
             "second_image": {
               "label": "Show second image on hover"
+            },
+            "show_badges": {
+              "label": "Show badges"
             }
           }
         },
@@ -739,6 +742,9 @@
         "enable_quick_buy": {
           "label": "Enable quick add button",
           "info": "Optimal with popup or drawer cart type."
+        },
+        "show_badges": {
+          "label": "Show badges"
         },
         "header_mobile": {
           "content": "Mobile Layout"
@@ -1738,6 +1744,9 @@
           "label": "Show product rating",
           "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-grid-section-settings)"
         },
+        "show_badges": {
+          "label": "Show badges"
+        },
         "header__1": {
           "content": "Filtering and sorting"
         },
@@ -1873,7 +1882,10 @@
           "name": "Title"
         },
         "price": {
-          "name": "Price"
+          "name": "Price",
+          "show_badges": {
+            "label": "Show Badges"
+          }
         },
         "inventory": {
           "name": "Inventory status",
@@ -2149,6 +2161,9 @@
             "heading": {
               "label": "Heading"
             },
+            "show_badges": {
+              "label": "Show badges"
+            },
             "make_collapsible_row": {
               "label": "Show as collapsible row"
             },
@@ -2357,6 +2372,9 @@
         "show_rating": {
           "label": "Show product rating",
           "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#search-results-section-settings)"
+        },
+        "show_badges": {
+          "label": "Show badges"
         },
         "header__1": {
           "content": "Product card"
@@ -2705,6 +2723,9 @@
         "show_rating": {
           "label": "Show product rating",
           "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-recommendations-section-settings)"
+        },
+        "show_badges": {
+          "label": "Show badges"
         },
         "header_mobile": {
           "content": "Mobile Layout"
