@@ -9,6 +9,14 @@
         "color_scheme": "background-1"
       }
     },
+    "46cc963d-2222-442c-9b92-02eac49271bb": {
+      "type": "main-collection-sinter-pad-finder",
+      "settings": {
+        "collections": [
+          "sinter-brakes"
+        ]
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -31,6 +39,7 @@
   },
   "order": [
     "banner",
+    "46cc963d-2222-442c-9b92-02eac49271bb",
     "product-grid"
   ]
 }

@@ -2865,6 +2865,11 @@
         "name": "Rich text"
       }
     },
+    "sinter-pad-finder": {
+      "presets": {
+        "name": "Sinter Pad Finder"
+      }
+    },
     "video": {
       "name": "Video",
       "settings": {
