@@ -327,6 +327,19 @@
         }
       }
     },
+    "price_prefix": {
+      "name": "Price Prefix",
+      "settings": {
+        "content": "Price Prefixes",
+        "paragraph": "What should be displayed ahead of the regular price? Example: MSRP, MAP",
+        "regular_price_prefix": {
+          "label": "Regular Price Prefix"
+        },
+        "sale_price_prefix": {
+          "label": "Sale Price Prefix"
+        }
+      }
+    },
     "cart": {
       "name": "Cart",
       "settings": {

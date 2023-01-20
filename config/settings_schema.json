@@ -1490,6 +1490,29 @@
     ]
   },
   {
+    "name": "t:settings_schema.price_prefix.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.price_prefix.settings.content"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.price_prefix.settings.paragraph"
+      },
+      {
+        "type": "text",
+        "id": "regular_price_prefix",
+        "label": "t:settings_schema.price_prefix.settings.regular_price_prefix.label"
+      },
+      {
+        "type": "text",
+        "id": "sale_price_prefix",
+        "label": "t:settings_schema.price_prefix.settings.sale_price_prefix.label"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.currency_format.name",
     "settings": [
       {
