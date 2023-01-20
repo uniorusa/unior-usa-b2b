@@ -156,7 +156,7 @@
                   {%- render 'price',
                     product: product,
                     use_variant: true,
-                    show_badges: false,
+                    show_badges: block.settings.show_badges,
                     price_class: 'price--large'
                   -%}
                 </div>
@@ -580,7 +580,15 @@
     {
       "type": "price",
       "name": "t:sections.featured-product.blocks.price.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_badges",
+          "default": false,
+          "label": "t:sections.featured-product.blocks.price.show_badges.label"
+        }
+      ]
     },
     {
       "type": "sku",

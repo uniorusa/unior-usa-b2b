@@ -793,7 +793,10 @@
           "name": "Title"
         },
         "price": {
-          "name": "Price"
+          "name": "Price",
+          "show_badges": {
+            "label": "Show badges"
+          }
         },
         "quantity_selector": {
           "name": "Quantity selector"
