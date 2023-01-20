@@ -1,4 +1,5 @@
-name: CI
+# .github/workflows/theme-check.yml
+name: Theme Check
 on: [push]
 jobs:
   theme-check:
@@ -9,4 +10,6 @@ jobs:
       - name: Theme Check
         uses: shopify/theme-check-action@v1
         with:
+          theme_root: '.' # optional, could be './dist'
           token: ${{ github.token }}
+          base: main
