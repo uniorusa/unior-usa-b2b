@@ -1,0 +1,45 @@
+{% assign favorites = customer.metafields.customer_fields.product_favorites.value %}
+
+<div class="fav-button" data-product-handle="{{ product.handle }}">
+  <button class="product-form__submit button button--primary">
+    {% if favorites contains product.handle %}
+      Un-favorite
+    {% else %}
+      Favorite
+    {% endif %}
+  </button>
+</div>
+
+<script>
+  CF.customerReady(function() {
+    var favorites = CF.customer.get('product_favorites');
+    console.log(favorites);
+    if (!favorites) favorites = CF.customer.set({ product_favorites: [] }).product_favorites;
+
+    // We want to scope this script to this product, in case the snippet is used more than once on a page.
+    var $buttonContainer = document.querySelector('.fav-button[data-product-handle="{{ product.handle }}"]');
+    var productHandle = "{{ product.handle }}";
+
+    // Find the button
+    var $favButton = $buttonContainer.querySelector('button');
+
+    // Listen for click events
+    $favButton.addEventListener('click', function() {
+      // Get the index of the product handle to see if it's already there
+      var indexOfFavoritedProduct = favorites.indexOf(productHandle);
+
+      if (indexOfFavoritedProduct > -1) {
+        // Already liked, so remove it
+        favorites.splice(indexOfFavoritedProduct, 1);
+        $favButton.innerText = 'Favorite';
+      } else {
+        // Not liked yet, so add it
+        favorites.push(productHandle);
+        $favButton.innerText = 'Un-favorite';
+      }
+
+      // Update the customer data
+      CF.customer.update({ product_favorites: favorites });
+    });
+  });
+</script>

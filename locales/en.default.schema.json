@@ -640,6 +640,38 @@
         "name": "Custom Liquid"
       }
     },
+    "favorites": {
+      "name": "Favorites",
+      "settings": {
+        "title": {
+          "label": "Title"
+        },
+        "image_ratio": {
+          "label": "Image Ratio",
+          "options__1": {
+            "label": "Adapt"
+          },
+          "options__2": {
+            "label": "Portrait"
+          },
+          "options__3": {
+            "label": "Square"
+          }
+        },
+        "show_vendor": {
+          "label": "Show vendor"
+        },
+        "image_padding": {
+          "label": "Image padding"
+        },
+        "show_view_all": {
+          "label": "Show view all"
+        },
+        "show_badges": {
+          "label": "Show badges"
+        }
+      }
+    },
     "featured-blog": {
       "name": "Blog posts",
       "settings": {
@@ -1874,6 +1906,9 @@
     "main-product": {
       "name": "Product information",
       "blocks": {
+        "favorite": {
+          "name": "Favorite"
+        },
         "text": {
           "name": "Text",
           "settings": {

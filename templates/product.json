@@ -45,6 +45,11 @@
             "show_dynamic_checkout": true
           }
         },
+        "b7590d51-e00d-4823-b0bc-bab54b225afa": {
+          "type": "favorite",
+          "settings": {
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -65,6 +70,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "b7590d51-e00d-4823-b0bc-bab54b225afa",
         "description",
         "ffd9355e-dcb9-4b55-bf5e-a0105abcf29d"
       ],
