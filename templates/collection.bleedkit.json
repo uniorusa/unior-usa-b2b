@@ -1,0 +1,88 @@
+{
+  "sections": {
+    "16437508403c71774c": {
+      "type": "multicolumn",
+      "blocks": {
+        "1643750840c86fd442-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BK-80090.jpg",
+            "title": "Bleed Kits",
+            "text": "<p>Bleedkit.com offers a full line of bleed kits for every braking system out there, whether DOT or mineral oil based.</p>",
+            "link_label": "All Bleed Kits",
+            "link": "shopify://collections/bleedkit-com-bleed-kits"
+          }
+        },
+        "1643750840c86fd442-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/bleedkit.com-how-to-bleed.jpg",
+            "title": "How To Bleed",
+            "text": "<p>Check out our video tutorials and learn how to properly bleed your brakes. Don't miss the ride!</p>",
+            "link_label": "Brake Bleeding How-To",
+            "link": "shopify://pages/how-to-bleed"
+          }
+        },
+        "1643750840c86fd442-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/GOLD-Hydraulic-Oil-logo-rgb.jpg",
+            "title": "GOLD Hydraulic Oil",
+            "text": "<p>Our own brand of ultra high-performance oil for brake systems designed for use with mineral oil.</p>",
+            "link_label": "Bleedkit.com GOLD Hydraulic Oil",
+            "link": "shopify://products/bleedkit-com-gold-mineral-oil"
+          }
+        }
+      },
+      "block_order": [
+        "1643750840c86fd442-0",
+        "1643750840c86fd442-1",
+        "1643750840c86fd442-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "sinter-pad-finder": {
+      "type": "main-collection-sinter-pad-finder",
+      "settings": { "collection": "sinter-brakes" }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true
+      }
+    }
+  },
+  "order": [
+    "16437508403c71774c",
+    "sinter-pad-finder",
+    "product-grid",
+    "banner"
+  ]
+}
