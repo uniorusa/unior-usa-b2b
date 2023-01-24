@@ -14,6 +14,7 @@
   - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
   - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
   - show_badges: {Boolean} Show availability / sale badges. Default: false (optional)
+  - card_style: Narrow or wide cards.
 
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
@@ -44,7 +45,7 @@
         {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
         {% if horizontal_class %} card--horizontal{% endif %}
       "
-      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%; {% if card_style == 'horizontal' %}flex-direction: row;{% endif %}"
     >
       <div
         class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
@@ -73,6 +74,7 @@
                 {% endunless %}
                 width="{{ card_product.featured_media.width }}"
                 height="{{ card_product.featured_media.height }}"
+                {% if card_style == 'horizontal' %} style="object-fit: contain" {% endif %}
               >
               {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
 
@@ -200,6 +202,10 @@
             {%- endif -%}
 
             {% render 'price', product: card_product, price_class: '' %}
+
+            {% if card_style == 'horizontal' %}
+              <div>{{ card_product.description | truncate: 100 }}</div>
+            {% endif %}
           </div>
         </div>
         {%- if show_quick_add -%}
