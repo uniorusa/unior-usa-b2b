@@ -53,6 +53,7 @@
         "show_rating": false,
         "enable_quick_add": true,
         "show_badges": false,
+        "card_style": "vertical",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 28,
@@ -98,11 +99,41 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "3b87db72-e44b-4eaf-9183-6cc344a473d2": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-products",
+        "products_to_show": 4,
+        "columns_desktop": 2,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "show_badges": false,
+        "card_style": "horizontal",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "32c72810-ae05-4dcf-95f6-b4b4005c0c22"
+    "32c72810-ae05-4dcf-95f6-b4b4005c0c22",
+    "3b87db72-e44b-4eaf-9183-6cc344a473d2"
   ]
 }
