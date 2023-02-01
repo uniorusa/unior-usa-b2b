@@ -82,6 +82,7 @@
         "gallery_layout": "stacked",
         "media_position": "left",
         "image_zoom": "hover",
+        "constrain_to_viewport": true,
         "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": true,
