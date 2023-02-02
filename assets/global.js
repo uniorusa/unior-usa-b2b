@@ -906,6 +906,7 @@ class VariantSelects extends HTMLElement {
 
   renderProductInfo() {
     const requestedVariantId = this.currentVariant.id;
+    const sectionId = this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section;
 
     fetch(`${this.dataset.url}?variant=${requestedVariantId}&section_id=${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`)
       .then((response) => response.text())
@@ -938,7 +939,14 @@ class VariantSelects extends HTMLElement {
 
         if (etwProductMetaDestination) etwProductMetaDestination.innerHTML = etwProductMetaSource.innerHTML;
 
-        this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
+        const addButtonUpdated = html.getElementById(`ProductSubmitButton-${sectionId}`);
+        this.toggleAddButton(addButtonUpdated ? addButtonUpdated.hasAttribute('disabled') : true, window.variantStrings.soldOut);
+
+        publish(PUB_SUB_EVENTS.variantChange, {data: {
+          sectionId,
+          html,
+          variant: this.currentVariant
+        }});
       });
   }
 
