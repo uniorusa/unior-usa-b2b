@@ -28,7 +28,16 @@
   if target == product and product.price_varies
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
+
+  assign maps = product.variants | map: 'metafields' | map: 'custom' | map: 'map'
+  assign maps = maps | sort
+  assign lowMap = maps | first
+  if lowMap == null
+    assign lowMap = 0
+  endif
 -%}
+
+<!-- {{- maps | json -}} -->
 
 <div
   class="
@@ -47,7 +56,10 @@
         - div.price__sale: Displayed when a variant is a sale
     {%- endcomment -%}
     <div class="price__regular">
-      <span class="visually-hidden visually-hidden--inline">{{- settings.regular_price_prefix -}} {{ 'products.product.price.regular_price' | t }}</span>
+      {% comment %}
+        Since we default to showing a prefix the a11y prefix here isn't required.
+        <span class="visually-hidden visually-hidden--inline">{{- settings.regular_price_prefix -}} {{ 'products.product.price.regular_price' | t }}</span>
+      {% endcomment %}
       {%- unless settings.regular_price_prefix == blank -%}
         <span class="price-prefix">
           {{ settings.regular_price_prefix }}
@@ -99,6 +111,16 @@
         </span>
       </span>
     </small>
+    <div>
+      <!-- {{- lowMap -}} -->
+      {%- unless settings.map_price_prefix == blank or lowMap == 0 -%}
+        <span class="price-prefix">{{- settings.map_price_prefix -}}</span>
+        <span class="price-item">
+          {%- if maps.size > 1 -%}From:{%- endif -%}
+          {{- lowMap | times: 100 | money -}}
+        </span>
+      {%- endunless -%}
+    </div>
   </div>
   {%- if show_badges -%}
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
