@@ -1,0 +1,61 @@
+{% schema %}
+{
+  "name": "Sinter Pad Finder",
+  "tag": "section",
+  "limit": 1,
+  "class": "section",
+  "disabled_on": {
+    "groups": [
+      "header",
+      "footer"
+    ]
+  },
+  "settings": [
+    {
+      "type": "collection_list",
+      "id": "collections",
+      "label": "Collections on which to show the Pad Finder"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.sinter-pad-finder.presets.name"
+    }
+  ]
+}
+{% endschema %}
+
+{%- assign collection_handles = section.settings.collections | map: 'handle' %}
+{% if collection_handles contains collection.handle %}
+<script src="{{ 'sinter-pad-finder.js' | asset_url }}" defer></script>
+{{ 'sinter-pad-finder.css' | asset_url | stylesheet_tag }}
+
+<sinter-pad-finder style="max-width: {{- section.settings.max_width | default: 100 -}}%;">
+  <div id="caliper_mfr" class="caliper-input">
+    <div>
+      <select id="padFinderMfrSelect" name="padFinderMfrSelect" class="select">
+        <option value="">Select a Manufacturer</option>
+      </select>
+      <span class="sinter-drop-icon"><svg viewBox="0 0 22.15 20.75" xmlns="http://www.w3.org/2000/svg"><path d="m21.67 9.28-9.58-8.88s0 0 0 0a1.45 1.45 0 0 0 -.44-.27h-.05a1.46 1.46 0 0 0 -1 0h-.05a1.45 1.45 0 0 0 -.44.27s0 0 0 0l-9.63 8.88a1.5 1.5 0 1 0 2 2.2l7.09-6.54v14.31a1.5 1.5 0 0 0 3 0v-14.31l7.06 6.54a1.53 1.53 0 0 0 1 .4 1.54 1.54 0 0 0 1.1-.48 1.5 1.5 0 0 0 -.06-2.12z" fill="#fff"/></svg></span>
+    </div>
+  </div>
+
+  <div id="caliper_model" class="caliper-input">
+    <div>
+      <select id="padFinderModelSelect" name="padFinderModelSelect" class="select">
+        <option value="">Select a Model</option>
+      </select>
+      <span class="sinter-drop-icon"><svg viewBox="0 0 22.15 20.75" xmlns="http://www.w3.org/2000/svg"><path d="m21.67 9.28-9.58-8.88s0 0 0 0a1.45 1.45 0 0 0 -.44-.27h-.05a1.46 1.46 0 0 0 -1 0h-.05a1.45 1.45 0 0 0 -.44.27s0 0 0 0l-9.63 8.88a1.5 1.5 0 1 0 2 2.2l7.09-6.54v14.31a1.5 1.5 0 0 0 3 0v-14.31l7.06 6.54a1.53 1.53 0 0 0 1 .4 1.54 1.54 0 0 0 1.1-.48 1.5 1.5 0 0 0 -.06-2.12z" fill="#fff"/></svg></span>
+    </div>
+  </div>
+
+  <div id="pad_link" class="caliper-input">
+    <form action="#" method="get" id="padFinderForm">
+      <button class="form__btn" disabled="disabled" id="padFinderFormButton">
+        <span id="padFormButtonText" class="text">Select a Caliper</span>
+        <svg class="form__btn-arrow" viewBox="0 0 11.34 11.34" xmlns="http://www.w3.org/2000/svg"><g><path d="m10.34 6.67h-9.34a1 1 0 0 1 0-2h9.34a1 1 0 0 1 0 2z"/><path d="m5.67 11.34a1 1 0 0 1 -.67-1.7l4-4-4-4a1 1 0 0 1 1.38-1.35l4.67 4.71a1 1 0 0 1 .29.7 1 1 0 0 1 -.29.71l-4.67 4.64a1 1 0 0 1 -.71.29z"/></g></svg>
+      </button>
+    </form>
+  </div>
+</sinter-pad-finder>
+{% endif %}

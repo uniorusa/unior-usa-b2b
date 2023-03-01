@@ -1,0 +1,44 @@
+/**
+ * B2B Specific Tweaks
+ *
+ * @format
+ */
+
+s.price-item--regular::before {
+  content: 'MSRP/MAP: ';
+}
+s.price-item--regular {
+  text-decoration: none !important;
+}
+
+@media screen and (max-width: 989px) {
+  sticky-header ul.list-menu {
+    columns: 1;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  sticky-header ul.list-menu {
+    columns: 2;
+    min-width: 50rem;
+  }
+}
+
+sticky-header li {
+  break-inside: avoid;
+}
+
+sticky-header .header__submenu .header__submenu {
+  columns: 1;
+  min-width: unset;
+  background-color: rgba(var(--color-background), 1);
+  border-bottom: var(--popup-border-width) solid
+    rgba(var(--color-foreground), var(--popup-border-opacity));
+  box-shadow: var(--popup-shadow-horizontal-offset)
+    var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--popup-shadow-opacity));
+}
+
+sticky-header .header__submenu .header__menu-item {
+  padding: 0.5rem 3.5rem 0.5rem 2rem;
+}

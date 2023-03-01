@@ -2,22 +2,34 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
         "color_scheme": "background-1"
       }
     },
+    "46cc963d-2222-442c-9b92-02eac49271bb": {
+      "type": "main-collection-sinter-pad-finder",
+      "settings": {
+        "collections": [
+          "sinter-brakes"
+        ]
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "image_ratio": "adapt",
+        "products_per_page": 20,
+        "columns_desktop": 5,
+        "image_ratio": "square",
         "show_secondary_image": false,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_rating": false,
+        "show_badges": false,
+        "enable_quick_add": true,
         "enable_filtering": true,
+        "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
         "padding_top": 36,
@@ -27,6 +39,7 @@
   },
   "order": [
     "banner",
+    "46cc963d-2222-442c-9b92-02eac49271bb",
     "product-grid"
   ]
 }

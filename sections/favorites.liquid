@@ -1,0 +1,132 @@
+{{ 'section-product-list.css' | asset_url | stylesheet_tag }}
+
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+  "name": "Favorites",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Favorite Products",
+      "label": "t:sections.favorites.settings.title.label"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.favorites.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.favorites.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.favorites.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "square",
+      "label": "t:sections.favorites.settings.image_ratio.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": true,
+      "label": "t:sections.favorites.settings.show_vendor.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "image_padding",
+      "default": false,
+      "label": "t:sections.favorites.settings.image_padding.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "default": false,
+      "label": "t:sections.favorites.settings.show_view_all.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_badges",
+      "default": false,
+      "label": "t:sections.favorites.settings.show_badges.label"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+{% assign favorites = customer.metafields.customer_fields.product_favorites.value %}
+
+<div class="product-list-wrapper page-width{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or favorites.size > collections.size %} no-mobile-link{% endif %}">
+  <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
+    <h2 class="product-list-title">{{ section.settings.title | escape }}</h2>
+  </div>
+
+  {% if favorites.size > 0 %}
+    <ul class="product-list grid grid--1-col{% if favorites.size < 5 %} grid--{{ favorites.size }}-col-tablet{% else %} grid--3-col-tablet{% endif %} collection-list--{{ favorites.size }}-items{% if section.settings.show_view_all == false or favorites.size > collections.size %} negative-margin--small{% endif %}"
+      id="{{ section.id }}"
+      role="list"
+    >
+      {% for favorite in favorites %}
+        <li id="{{ section.id }}-{{ forloop.index }}" class="product-list__item grid__item">
+            {% render 'product-card-wide', product_card_product: all_products[favorite], show_vendor: section.settings.show_vendor, media_size: section.settings.image_ratio, add_image_padding: section.settings.image_padding, show_badges: section.settings.show_badges %}
+        </li>
+      {%- endfor -%}
+    </ul>
+    {% else %}
+      You have no favorites registered!
+    {% endif %}
+</div>
+
+
+<script>
+  CF.customerReady(function() {
+    var favorites = CF.customer.get('product_favorites');
+  });
+</script>
+<style>
+    .product-list {
+        justify-content: space-around;
+    }
+    .product-list__item {
+        border: 1px var(--gradient-base-background-2) solid;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .product-card-wide {
+        border-bottom: unset !important;
+    }
+    div.media {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    @media screen and (max-width: 1007px) {
+        .product-list__item {
+            width: 90% !important;
+            max-width: 90% !important;
+        }
+        .product-card-wide {
+            grid-template-rows: 1fr 0.5fr;
+        }
+    }
+    @media screen and (min-width: 1008px) {
+        .product-list__item {
+            width: calc((100% - 10%) / 2) !important;
+            max-width: 95% !important;
+        }
+        .product-list__item:last-of-type {
+            max-width: unset !important;
+        }
+    } 
+</style>

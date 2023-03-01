@@ -330,6 +330,19 @@
         }
       }
     },
+    "price_prefix": {
+      "name": "Price Prefix",
+      "settings": {
+        "content": "Price Prefixes",
+        "paragraph": "What should be displayed ahead of the regular price? Example: MSRP, MAP",
+        "regular_price_prefix": {
+          "label": "Regular Price Prefix"
+        },
+        "sale_price_prefix": {
+          "label": "Sale Price Prefix"
+        }
+      }
+    },
     "cart": {
       "name": "Cart",
       "settings": {
@@ -521,6 +534,9 @@
             },
             "second_image": {
               "label": "Show second image on hover"
+            },
+            "show_badges": {
+              "label": "Show badges"
             }
           }
         },
@@ -625,6 +641,38 @@
       },
       "presets": {
         "name": "Custom Liquid"
+      }
+    },
+    "favorites": {
+      "name": "Favorites",
+      "settings": {
+        "title": {
+          "label": "Title"
+        },
+        "image_ratio": {
+          "label": "Image Ratio",
+          "options__1": {
+            "label": "Adapt"
+          },
+          "options__2": {
+            "label": "Portrait"
+          },
+          "options__3": {
+            "label": "Square"
+          }
+        },
+        "show_vendor": {
+          "label": "Show vendor"
+        },
+        "image_padding": {
+          "label": "Image padding"
+        },
+        "show_view_all": {
+          "label": "Show view all"
+        },
+        "show_badges": {
+          "label": "Show badges"
+        }
       }
     },
     "featured-blog": {
@@ -743,6 +791,9 @@
           "label": "Enable quick add button",
           "info": "Optimal with popup or drawer cart type."
         },
+        "show_badges": {
+          "label": "Show badges"
+        },
         "header_mobile": {
           "content": "Mobile Layout"
         },
@@ -790,7 +841,10 @@
           "name": "Title"
         },
         "price": {
-          "name": "Price"
+          "name": "Price",
+          "show_badges": {
+            "label": "Show badges"
+          }
         },
         "quantity_selector": {
           "name": "Quantity selector"
@@ -1699,6 +1753,9 @@
         "columns_desktop": {
           "label": "Number of columns on desktop"
         },
+        "card_style": {
+          "label": "Card style"
+        },
         "enable_filtering": {
           "label": "Enable filtering",
           "info": "Customize filters with the Search & Discovery app. [Learn more](https://help.shopify.com/manual/online-store/search-and-discovery/filters)"
@@ -1740,6 +1797,9 @@
         "show_rating": {
           "label": "Show product rating",
           "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-grid-section-settings)"
+        },
+        "show_badges": {
+          "label": "Show badges"
         },
         "header__1": {
           "content": "Filtering and sorting"
@@ -1852,6 +1912,9 @@
     "main-product": {
       "name": "Product information",
       "blocks": {
+        "favorite": {
+          "name": "Favorite"
+        },
         "text": {
           "name": "Text",
           "settings": {
@@ -1876,7 +1939,10 @@
           "name": "Title"
         },
         "price": {
-          "name": "Price"
+          "name": "Price",
+          "show_badges": {
+            "label": "Show Badges"
+          }
         },
         "inventory": {
           "name": "Inventory status",
@@ -2152,6 +2218,9 @@
             "heading": {
               "label": "Heading"
             },
+            "show_badges": {
+              "label": "Show badges"
+            },
             "make_collapsible_row": {
               "label": "Show as collapsible row"
             },
@@ -2360,6 +2429,9 @@
         "show_rating": {
           "label": "Show product rating",
           "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#search-results-section-settings)"
+        },
+        "show_badges": {
+          "label": "Show badges"
         },
         "header__1": {
           "content": "Product card"
@@ -2709,6 +2781,9 @@
           "label": "Show product rating",
           "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-recommendations-section-settings)"
         },
+        "show_badges": {
+          "label": "Show badges"
+        },
         "header_mobile": {
           "content": "Mobile Layout"
         },
@@ -2829,6 +2904,11 @@
       },
       "presets": {
         "name": "Rich text"
+      }
+    },
+    "sinter-pad-finder": {
+      "presets": {
+        "name": "Sinter Pad Finder"
       }
     },
     "video": {

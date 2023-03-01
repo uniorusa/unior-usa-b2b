@@ -93,7 +93,7 @@
                 {%- render 'price',
                   product: product,
                   use_variant: true,
-                  show_badges: true,
+                  show_badges: block.settings.show_badges,
                   price_class: 'price--large'
                 -%}
               </div>
@@ -347,6 +347,8 @@
                   </span>
                 </p>
               {%- endif -%}
+            {%- when 'favorite' -%}
+              {% render 'customer-favorite' %}
             {%- when 'complementary' -%}
               <product-recommendations class="complementary-products quick-add-hidden no-js-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary">
                 {%- if recommendations.performed and recommendations.products_count > 0 -%}
@@ -384,7 +386,8 @@
                                       show_quick_add: block.settings.enable_quick_add,
                                       section_id: section.id,
                                       horizontal_class: true,
-                                      horizontal_quick_add: true
+                                      horizontal_quick_add: true,
+                                      show_badges: block.settings.show_badges
                                     %}
                                   </li>
                                 {%- endfor -%}
@@ -618,7 +621,15 @@
     {
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_badges",
+          "default": false,
+          "label": "t:sections.main-product.blocks.price.show_badges.label"
+        }
+      ]
     },
     {
       "type": "sku",
@@ -1025,6 +1036,12 @@
           "id": "make_collapsible_row",
           "default": false,
           "label": "t:sections.main-product.blocks.complementary_products.settings.make_collapsible_row.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_badges",
+          "default": false,
+          "label": "t:sections.main-product.blocks.complementary_products.settings.show_badges.label"
         },
         {
           "type": "select",
@@ -1891,6 +1908,11 @@
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
         }
       ]
+    },
+    {
+      "type": "favorite",
+      "name": "t:sections.main-product.blocks.favorite.name",
+      "limit": 1
     }
   ],
   "settings": [

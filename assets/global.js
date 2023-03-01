@@ -933,6 +933,8 @@ class VariantSelects extends HTMLElement {
         const skuDestination = document.getElementById(`Sku-${this.dataset.section}`);
         const inventorySource = html.getElementById(`Inventory-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
         const inventoryDestination = document.getElementById(`Inventory-${this.dataset.section}`);
+        const etwProductMetaSource = html.getElementById(`etw_product_meta-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
+        const etwProductMetaDestination = document.getElementById(`etw_product_meta-${this.dataset.section}`);
 
         if (source && destination) destination.innerHTML = source.innerHTML;
         if (inventorySource && inventoryDestination) inventoryDestination.innerHTML = inventorySource.innerHTML;
@@ -946,6 +948,8 @@ class VariantSelects extends HTMLElement {
         if (price) price.classList.remove('visibility-hidden');
 
         if (inventoryDestination) inventoryDestination.classList.toggle('visibility-hidden', inventorySource.innerText === '');
+
+        if (etwProductMetaDestination) etwProductMetaDestination.innerHTML = etwProductMetaSource.innerHTML;
 
         const addButtonUpdated = html.getElementById(`ProductSubmitButton-${sectionId}`);
         this.toggleAddButton(addButtonUpdated ? addButtonUpdated.hasAttribute('disabled') : true, window.variantStrings.soldOut);

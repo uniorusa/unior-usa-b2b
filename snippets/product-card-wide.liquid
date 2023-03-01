@@ -1,0 +1,193 @@
+{%- liquid
+  if product_card_product.featured_media
+    assign featured_media_aspect_ratio = product_card_product.featured_media.aspect_ratio
+
+		if product_card_product.featured_media.aspect_ratio == nil
+      assign featured_media_aspect_ratio = 1
+    endif
+  endif
+%}
+
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
+<div class="product-card-wide" style="{%- unless last_iter -%}border-bottom: 1px solid rgba(var(--color-foreground),.25); {%- endunless -%}padding: 2rem 0;">
+    <div class="product-card-photo{% if product_card_product.featured_media == nil %} card--text-only card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %}">
+        <div {% if add_image_padding %}class="card__media-full-spacer"{% endif %}>
+            <div class="media media--{{ media_size }}" {% if media_size == 'adapt' and product_card_product.featured_media %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}>
+                <img
+                    srcset="{%- if product_card_product.featured_media.width >= 165 -%}{{ product_card_product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
+                    {%- if product_card_product.featured_media.width >= 360 -%}{{ product_card_product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
+                    {%- if product_card_product.featured_media.width >= 533 -%}{{ product_card_product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
+                    {%- if product_card_product.featured_media.width >= 720 -%}{{ product_card_product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
+                    {%- if product_card_product.featured_media.width >= 940 -%}{{ product_card_product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
+                    {%- if product_card_product.featured_media.width >= 1066 -%}{{ product_card_product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
+                    {{ product_card_product.featured_media | image_url }} {{ product_card_product.featured_media.width }}w"
+                    src="{{ product_card_product.featured_media | image_url: width: 300 }}"
+                    alt="{{ product_card_product.featured_media.alt | escape }}"
+                    loading="lazy"
+                    class="motion-reduce"
+                    width="{{ product_card_product.featured_media.width }}"
+                    height="{{ product_card_product.featured_media.height }}"
+                >
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card-content small-ml-0" style="display: flex; flex-direction: column; flex-grow: 1; margin-left: 5rem;">
+        <div class="" style="flex-grow: 1;">
+            {%- if show_vendor -%}
+                <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
+                <div class="caption-with-letter-spacing light">{{ product_card_product.vendor }}</div>
+            {%- endif -%}
+
+            {%- if product_card_product.featured_media -%}
+                <h3 class="card-information__text h5">
+                    <a href="{{ product_card_product.url | within: collection | default: '#' }}" class="full-unstyled-link">
+                        {{ product_card_product.title | escape }}
+                    </a>
+                </h3>
+            {%- endif -%}
+
+            <span class="caption-large light">{{ product_card_product.description | strip_html | truncate: 150 }}</span>
+        </div>
+
+        <div class="card__badge small-full-width" style="position: unset;">
+            {%- if product_card_product.available == false -%}
+                <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span>
+            {%- endif -%}
+        </div>
+  	</div>
+  
+  	<div class="product-card-add-to-cart">
+        {% render 'price', product: product_card_product, price_class: '' %}
+
+        <product-form class="product-form" style="display: flex; align-items: end; flex-grow: 1;">
+            {%- assign product_form_id = 'product-form-' | append: product_card_product.selected_or_first_available_variant.id -%}
+            {%- form 'product', product_card_product, id: product_form_id -%}
+                <input type="hidden" name="id" value="{{ product_card_product.selected_or_first_available_variant.id }}">
+
+                <div class="product-form__error-message-wrapper" role="alert" hidden>
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
+                        <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
+                        <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
+                        <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"/>
+                        <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
+                    </svg>
+                    <span class="product-form__error-message"></span>
+                </div>
+
+                <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
+                    {%- if product_card_product.has_only_default_variant -%}
+                        <quantity-input class="quantity">
+                            <button class="quantity__button no-js-hidden" name="minus" type="button">
+                                <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+                                {% render 'icon-minus' %}
+                            </button>
+                            <input class="quantity__input" type="number" name="quantity" id="Quantity-{{ product_form_id }}" min="1" value="1" form="{{ product_form_id }}">
+                            <button class="quantity__button no-js-hidden" name="plus" type="button">
+                                <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+                                {% render 'icon-plus' %}
+                            </button>
+                        </quantity-input>
+
+                        <div class="product-form__buttons" id="dawn-AddToCart">
+                            <button type="submit" name="add" class="product-form__submit button 
+                                {% if block.settings.show_dynamic_checkout and product_card_product.selling_plan_groups == empty %} button--secondary{% else %} button--primary{% endif %}"
+                                {% if product_card_product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+                                <span>
+                                    {%- if product_card_product.selected_or_first_available_variant.available -%}
+                                        {{ 'products.product.add_to_cart' | t }}
+                                    {%- else -%}
+                                        {{ 'products.product.sold_out' | t }}
+                                    {%- endif -%}
+                                </span>
+
+                                <div class="loading-overlay__spinner hidden">
+                                    <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    {%- else -%}
+                        <a href="{{ product_card_product.url }}" class="button button--secondary">See all options</a>
+                    {%- endif -%}
+                </div>
+            {%- endform -%}
+        </product_form>
+    </div>
+</div>
+
+<style>
+  ul > li > .product-card-wide:not(:last-of-type) {
+    border-bottom: none;
+  }
+.product-card-wide .full-unstyled-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.product-card-wide .full-unstyled-link:focus-visible {
+    outline: 0;
+    box-shadow: none;
+}
+
+.product-card-wide .full-unstyled-link:focus-visible::after {
+    outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
+    outline-offset: 0.3rem;
+    box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
+        0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+}
+
+.product-card-wide:focus-within .card {
+    box-shadow: none;
+}
+
+.product-card-wide {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "photo content"
+        "add-to-cart add-to-cart";
+}
+@media screen and (min-width: 750px) {
+    .product-card-wide {
+        grid-template-columns: 1fr 3fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "photo content add-to-cart";
+    }
+}
+.product-card-photo {
+    grid-area: photo;
+}
+
+.product-card-content {
+    grid-area: content;
+}
+
+.product-card-add-to-cart {
+    grid-area: add-to-cart;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 749px) {
+    .small-ml-0 {
+        margin-left: 0 !important;
+    }
+}
+</style>

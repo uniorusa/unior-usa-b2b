@@ -157,7 +157,9 @@
                     show_rating: section.settings.show_rating,
                     lazy_load: lazy_load,
                     show_quick_add: section.settings.enable_quick_add,
-                    section_id: section.id
+                    section_id: section.id,
+                    show_badges: section.settings.show_badges,
+                    card_style: section.settings.card_style
                   %}
                 </li>
               {%- endfor -%}
@@ -195,6 +197,21 @@
       "step": 1,
       "default": 4,
       "label": "t:sections.main-collection-product-grid.settings.columns_desktop.label"
+    },
+    {
+      "type": "select",
+      "id": "card_style",
+      "label": "t:sections.main-collection-product-grid.settings.card_style.label",
+      "options": [
+        {
+          "value": "vertical",
+          "label": "Vertical"
+        },
+        {
+          "value": "horizontal",
+          "label": "Horizontal"
+        }
+      ]
     },
     {
       "type": "header",
@@ -238,6 +255,12 @@
       "default": false,
       "label": "t:sections.main-collection-product-grid.settings.show_rating.label",
       "info": "t:sections.main-collection-product-grid.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_badges",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.show_badges.label"
     },
     {
       "type": "checkbox",
