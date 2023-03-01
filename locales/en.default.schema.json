@@ -340,6 +340,9 @@
         },
         "sale_price_prefix": {
           "label": "Sale Price Prefix"
+        },
+        "map_price_prefix": {
+          "label": "MAP/MSRP Price Prefix"
         }
       }
     },
@@ -1049,7 +1052,7 @@
         "margin_top": {
           "label": "Top margin"
         },
-         "header__9": {
+        "header__9": {
           "content": "Follow on Shop",
           "info": "Display follow button for your storefront on the Shop app. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
         },

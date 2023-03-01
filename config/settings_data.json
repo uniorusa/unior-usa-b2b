@@ -3,8 +3,6 @@
     "logo": "shopify:\/\/shop_images\/UBT_Logotype_1_-_RED.png",
     "logo_width": 190,
     "favicon": "shopify:\/\/shop_images\/UBT_Logomark_-_RED.png",
-    "brand_headline": "Unior Bike Tools - Made For Work",
-    "brand_image": "shopify:\/\/shop_images\/DSC07980_Small_f75bde89-868d-462c-802c-ece03be6c80f.jpg",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#d71f2a",
     "gradient_accent_1": "",
@@ -110,6 +108,8 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
+    "brand_headline": "Unior Bike Tools - Made For Work",
+    "brand_image": "shopify:\/\/shop_images\/DSC07980_Small_f75bde89-868d-462c-802c-ece03be6c80f.jpg",
     "social_facebook_link": "",
     "social_instagram_link": "",
     "social_youtube_link": "",
@@ -122,8 +122,9 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": true,
     "predictive_search_show_price": false,
-    "regular_price_prefix": "MAP\/MSRP",
-    "sale_price_prefix": "Dealer",
+    "regular_price_prefix": "Regular:",
+    "sale_price_prefix": "Sale:",
+    "map_price_prefix": "MAP/MSRP:",
     "currency_code_enabled": false,
     "cart_type": "drawer",
     "show_vendor": true,
@@ -145,15 +146,12 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "9776720720251544092": {
         "type": "shopify:\/\/apps\/helium-customer-fields\/blocks\/app-embed\/bab58598-3e6a-4377-aaaa-97189b15f131",
