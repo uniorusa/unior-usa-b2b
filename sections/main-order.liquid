@@ -217,7 +217,7 @@
                       <span class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</span>
                     </dt>
                     <dd>
-                      <span>{{ line_item.final_line_price | money }}</span>
+                      <span class="money" data-line-index="{{ forloop.index0 }}" data-line-total>{{ line_item.final_line_price | money }}</span>
                     </dd>
                   </dl>
                 {%- else -%}

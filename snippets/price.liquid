@@ -65,7 +65,7 @@
           {{ settings.regular_price_prefix }}
         </span>
       {%- endunless -%}
-      <span class="price-item price-item--regular">
+      <span class="price-item price-item--regular money" data-product-id="{{ product.id }}">
         {{ money_price }}
       </span>
     </div>
