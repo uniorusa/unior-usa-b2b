@@ -1,41 +1,5 @@
 {
   "sections": {
-    "a45a6850-8e6c-4407-a890-a7abbf5c699d": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--16664739381484__a45a6850-8e6c-4407-a890-a7abbf5c699d-16745779216877b7ce-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Almost hands on...",
-            "heading_size": "h0"
-          }
-        },
-        "template--16664739381484__a45a6850-8e6c-4407-a890-a7abbf5c699d-16745779216877b7ce-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We're pleased to now offer the ability to preview what our workbenches, repair stands, and other select items will look like in your shop!<\/p><p>We've added 3d models to our product listings that you can spin, zoom, twirl, and more to get a better idea of what they'll look like.<\/p><p>On select devices, including most recent iPhones, iPads, and some Android devices, you'll also be presented with the option to experience the item via augmented reality.<\/p><p><a href=\"https:\/\/youtube.com\/shorts\/SY-JxoCTlJw\" target=\"_blank\" title=\"https:\/\/youtube.com\/shorts\/SY-JxoCTlJw\">Check the demo video<\/a> to see what it looks like!<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "template--16664739381484__a45a6850-8e6c-4407-a890-a7abbf5c699d-16745779216877b7ce-0",
-        "template--16664739381484__a45a6850-8e6c-4407-a890-a7abbf5c699d-16745779216877b7ce-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/b2b-ar-demo.png",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -167,7 +131,6 @@
     }
   },
   "order": [
-    "a45a6850-8e6c-4407-a890-a7abbf5c699d",
     "image_banner",
     "featured_collection",
     "32c72810-ae05-4dcf-95f6-b4b4005c0c22",
