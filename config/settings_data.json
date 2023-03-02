@@ -124,13 +124,19 @@
     "predictive_search_show_price": false,
     "regular_price_prefix": "Regular:",
     "sale_price_prefix": "Sale:",
-    "map_price_prefix": "MAP/MSRP:",
+    "map_price_prefix": "MAP\/MSRP:",
     "currency_code_enabled": false,
-    "cart_type": "drawer",
+    "cart_type": "page",
     "show_vendor": true,
     "show_cart_note": true,
     "cart_drawer_collection": "special-offers",
     "checkout_logo_image": "shopify:\/\/shop_images\/UBT_Logotype_1_-_RED.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_input_background_color_mode": "white",
+    "checkout_accent_color": "#d70e29",
+    "checkout_button_color": "#d70e29",
+    "checkout_error_color": "#d70e29",
     "price_prefix": "",
     "sections": {
       "main-password-header": {
@@ -146,12 +152,15 @@
         }
       }
     },
-    "content_for_index": [],
+    "content_for_index": [
+
+    ],
     "blocks": {
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "9776720720251544092": {
         "type": "shopify:\/\/apps\/helium-customer-fields\/blocks\/app-embed\/bab58598-3e6a-4377-aaaa-97189b15f131",
