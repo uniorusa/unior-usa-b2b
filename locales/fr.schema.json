@@ -382,6 +382,14 @@
           "content": "Ajoutez une description de votre marque au pied de page de votre boutique."
         }
       }
+    },
+    "animations": {
+      "name": "Animations",
+      "settings": {
+        "animations_reveal_on_scroll": {
+          "label": "Afficher les sections lors du défilement"
+        }
+      }
     }
   },
   "sections": {
@@ -425,6 +433,34 @@
         "options__4": {
           "label": "Très grand"
         }
+      },
+      "image_shape": {
+        "options__1": {
+          "label": "Forme par défaut"
+        },
+        "options__2": {
+          "label": "Arche"
+        },
+        "options__3": {
+          "label": "Indistincte"
+        },
+        "options__4": {
+          "label": "Chevron gauche"
+        },
+        "options__5": {
+          "label": "Chevron droite"
+        },
+        "options__6": {
+          "label": "Losange"
+        },
+        "options__7": {
+          "label": "Parallélogramme"
+        },
+        "options__8": {
+          "label": "Cercle"
+        },
+        "label": "Forme d’image",
+        "info": "Les cartes de style standard n’ont pas de bordures lorsqu’une forme d’image est active."
       },
       "animation": {
         "content": "Animations",
@@ -1612,7 +1648,11 @@
           "settings": {
             "show_dynamic_checkout": {
               "label": "Afficher les boutons de paiement dynamique",
-              "info": "En utilisant les méthodes de paiement disponibles sur votre boutique, les clients voient leur option préférée, comme PayPal ou Apple Pay. [En savoir plus](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+              "info": "En utilisant les méthodes de paiement disponibles sur votre boutique, les clients voient leur option préférée, comme PayPal ou Apple Pay. [En savoir plus](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+            },
+            "show_gift_card_recipient": {
+              "label": "Afficher le formulaire d’information sur le destinataire pour les cartes‑cadeaux en tant que produit",
+              "info": "Les cartes‑cadeaux en tant que produit peuvent être envoyées directement au destinataire, accompagnées d’un message personnel."
             }
           }
         },
@@ -2460,7 +2500,11 @@
           "settings": {
             "show_dynamic_checkout": {
               "label": "Afficher les boutons de paiement dynamique",
-              "info": "En utilisant les moyens de paiement disponibles sur votre boutique, les clients voient leur option préférée, comme PayPal ou Apple Pay. [En savoir plus](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+              "info": "En utilisant les moyens de paiement disponibles sur votre boutique, les clients voient leur option préférée, comme PayPal ou Apple Pay. [En savoir plus](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+            },
+            "show_gift_card_recipient": {
+              "label": "Afficher le formulaire du destinataire pour les cartes‑cadeaux en tant que produit",
+              "info": "Lorsque cette option est activée, les cartes‑cadeaux en tant que produit peuvent être envoyées à un destinataire, accompagnées d’un message personnel."
             }
           }
         },
