@@ -22,6 +22,7 @@
         "image": "shopify:\/\/shop_images\/JL_Dealer_Pack_Promo-03.jpg",
         "image_overlay_opacity": 10,
         "image_height": "adapt",
+        "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
