@@ -2,7 +2,6 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -22,7 +21,9 @@
       "settings": {
         "products_per_page": 20,
         "columns_desktop": 5,
+        "card_style": "vertical",
         "image_ratio": "square",
+        "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": true,
         "show_rating": false,
