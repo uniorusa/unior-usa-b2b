@@ -103,7 +103,7 @@
         "template--16724721139948__75d9aa1f-0c99-49e4-8140-e75a924cb4c1-16832845436282b624-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Sinter pads are tested on their in-house BTM-11 dynamometer.<br\/><br\/>Performing 84 braking cycles comprising 3 seconds of acceleration to 15.5mph and 7 seconds of deceleration it records temperature and friction coefficient.<br\/><br\/><strong>Measured Parameters:<\/strong><\/p><ol><li>Brake Torque (Nm)<\/li><li>Brake Disc Temperature (degrees Celsius)<br\/><\/li><li>Hydraulic Pressure (Bar)<\/li><li>Lever Force (N)<\/li><li>Friction Coefficient<br\/><br\/>Chart Key Below<br\/><strong>Light red line<\/strong> - Temperature<br\/><strong>Dark red line<\/strong> - Sinter pad<br\/><strong>Dashed blue line<\/strong> - OEM pad<br\/><strong>Dashed green line<\/strong> - Competitor pad<\/li><\/ol>",
+            "text": "<p>Sinter pads are tested on their in-house BTM-11 dynamometer.<br\/><br\/>Performing 84 braking cycles comprising 3 seconds of acceleration to 15.5mph and 7 seconds of deceleration it records temperature and friction coefficient.<br\/><br\/><strong>Measured Parameters:<\/strong><\/p><ol><li>Brake Torque (Nm)<\/li><li>Brake Disc Temperature (degrees Celsius)<br\/><\/li><li>Hydraulic Pressure (Bar)<\/li><li>Lever Force (N)<\/li><li>Friction Coefficient<br\/><br\/>Chart Key Below<br\/><strong>Light red line<\/strong> - Temperature<br\/><strong>Dark compound color line<\/strong> - Sinter pad<br\/><strong>Dashed blue line<\/strong> - OEM pad<br\/><strong>Dashed green line<\/strong> - Competitor pad<\/li><\/ol>",
             "text_style": "body"
           }
         }
