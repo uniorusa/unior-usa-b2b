@@ -36,11 +36,49 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "28bb9693-f736-4420-9de2-d957ff095f3a": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16724721959148__28bb9693-f736-4420-9de2-d957ff095f3a-16832845436282b624-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Good to know",
+            "heading_size": "h2"
+          }
+        },
+        "template--16724721959148__28bb9693-f736-4420-9de2-d957ff095f3a-16832845436282b624-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sinter manufactures demonstrably superior, premium cycling brake pads that use organic friction materials exclusively as it's the best option for cycling.<\/p><p>Its manufacturing is based solely in Slovenia, Europe. Raw materials are sourced locally which means that the origin is EU and non EU countries that are REACH compliant.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16724721959148__28bb9693-f736-4420-9de2-d957ff095f3a-16832845436282b624-0",
+        "template--16724721959148__28bb9693-f736-4420-9de2-d957ff095f3a-16832845436282b624-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/319547513_216615250713106_5385590950916540245_n.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "banner",
     "46cc963d-2222-442c-9b92-02eac49271bb",
-    "product-grid"
+    "product-grid",
+    "28bb9693-f736-4420-9de2-d957ff095f3a"
   ]
 }
