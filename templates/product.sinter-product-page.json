@@ -90,6 +90,117 @@
         "padding_bottom": 12
       }
     },
+    "fbcab17e-2177-46cb-9f97-2f898750281b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16724721139948__fbcab17e-2177-46cb-9f97-2f898750281b-1683282633952dbf02-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Red s514",
+            "heading_size": "h2"
+          }
+        },
+        "template--16724721139948__fbcab17e-2177-46cb-9f97-2f898750281b-1683282633952dbf02-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- 15% improvement in friction coefficient performance compared with OEM pads<br\/><\/p><p>- 29%  improvement in friction coefficient performance compared with Competitor pads<\/p><p>- Ceramic particles for soft bite with good wear resistance<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16724721139948__fbcab17e-2177-46cb-9f97-2f898750281b-1683282633952dbf02-0",
+        "template--16724721139948__fbcab17e-2177-46cb-9f97-2f898750281b-1683282633952dbf02-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Sinter_Compound_Graphs-01.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cd6d66cc-c76a-4817-85aa-0dcedfd21bb4": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16724721139948__cd6d66cc-c76a-4817-85aa-0dcedfd21bb4-1683282633952dbf02-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Green s2032",
+            "heading_size": "h2"
+          }
+        },
+        "template--16724721139948__cd6d66cc-c76a-4817-85aa-0dcedfd21bb4-1683282633952dbf02-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- 36% improvement in friction coefficient performance compared with OEM pads<\/p><p>- 41%  improvement in friction coefficient performance compared with Competitor pads<\/p><p>- Kevlar fibres provide wear and temperature resistance<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16724721139948__cd6d66cc-c76a-4817-85aa-0dcedfd21bb4-1683282633952dbf02-0",
+        "template--16724721139948__cd6d66cc-c76a-4817-85aa-0dcedfd21bb4-1683282633952dbf02-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Sinter_Compound_Graphs-03.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e426da84-eca2-4dc9-b29b-4338b0175b1a": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16724721139948__e426da84-eca2-4dc9-b29b-4338b0175b1a-1683282633952dbf02-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Black s550",
+            "heading_size": "h2"
+          }
+        },
+        "template--16724721139948__e426da84-eca2-4dc9-b29b-4338b0175b1a-1683282633952dbf02-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- 32% improvement in friction coefficient performance compared with OEM pads<\/p><p>- 38%  improvement in friction coefficient performance compared with Competitor pads<\/p><p>- Kevlar and friction coefficient enhancing fibres<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16724721139948__e426da84-eca2-4dc9-b29b-4338b0175b1a-1683282633952dbf02-0",
+        "template--16724721139948__e426da84-eca2-4dc9-b29b-4338b0175b1a-1683282633952dbf02-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Sinter_Compound_Graphs-02.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "636fe4b9-c111-430e-8f1a-4d3527e8a70e": {
       "type": "image-with-text",
       "blocks": {
@@ -103,7 +214,7 @@
         "template--16724721139948__636fe4b9-c111-430e-8f1a-4d3527e8a70e-1683282633952dbf02-1": {
           "type": "text",
           "settings": {
-            "text": "<p>27% improvement in friction coefficient performance compared with OEM pads<br\/><br\/>44%  improvement in friction coefficient performance compared with Competitor pads<br\/><br\/>Metal and ceramic particles increase the friction properties and wear resistance<\/p>",
+            "text": "<p>- 27% improvement in friction coefficient performance compared with OEM pads<\/p><p>- 44%  improvement in friction coefficient performance compared with Competitor pads<\/p><p>- Metal and ceramic particles increase the friction properties and wear resistance<\/p>",
             "text_style": "body"
           }
         }
@@ -113,7 +224,7 @@
         "template--16724721139948__636fe4b9-c111-430e-8f1a-4d3527e8a70e-1683282633952dbf02-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Image_1_Rigorous_Testing_d4c60c4e-bc05-4241-aaa2-b05a71451d0d.jpg",
+        "image": "shopify:\/\/shop_images\/Sinter_Compound_Graphs-04.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -187,6 +298,9 @@
   },
   "order": [
     "main",
+    "fbcab17e-2177-46cb-9f97-2f898750281b",
+    "cd6d66cc-c76a-4817-85aa-0dcedfd21bb4",
+    "e426da84-eca2-4dc9-b29b-4338b0175b1a",
     "636fe4b9-c111-430e-8f1a-4d3527e8a70e",
     "e74e82b2-0303-448e-8f59-7b4b65fb17f2",
     "related-products"
