@@ -145,11 +145,50 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "e74e82b2-0303-448e-8f59-7b4b65fb17f2": {
+      "type": "collage",
+      "blocks": {
+        "template--16724721139948__e74e82b2-0303-448e-8f59-7b4b65fb17f2-16832804205b56497f-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_2_Scientifically_Developed_Compounds.jpg"
+          }
+        },
+        "0a16b38f-877a-4b24-8ad0-d62dcb75a0ed": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sinter-RRH-BulkBuy.gif"
+          }
+        },
+        "17a13a9b-9f42-4536-a5aa-f0d2762af505": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/319547513_216615250713106_5385590950916540245_n.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--16724721139948__e74e82b2-0303-448e-8f59-7b4b65fb17f2-16832804205b56497f-0",
+        "0a16b38f-877a-4b24-8ad0-d62dcb75a0ed",
+        "17a13a9b-9f42-4536-a5aa-f0d2762af505"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "background-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "636fe4b9-c111-430e-8f1a-4d3527e8a70e",
-    "related-products"
+    "related-products",
+    "e74e82b2-0303-448e-8f59-7b4b65fb17f2"
   ]
 }
