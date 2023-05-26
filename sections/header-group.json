@@ -4,14 +4,11 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "disabled": true,
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
-            "text_alignment": "center",
-            "color_scheme": "background-1",
+            "text": "Closed Monday 29th May for Memorial Day. Back Tuesday!",
             "link": ""
           }
         }
@@ -20,6 +17,10 @@
         "announcement-bar-0"
       ],
       "settings": {
+        "color_scheme": "accent-1",
+        "show_line_separator": true,
+        "auto_rotate": false,
+        "change_slides_speed": 5
       }
     },
     "header": {
