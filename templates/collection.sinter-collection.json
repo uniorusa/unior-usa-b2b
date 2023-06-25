@@ -10,6 +10,7 @@
     },
     "46cc963d-2222-442c-9b92-02eac49271bb": {
       "type": "main-collection-sinter-pad-finder",
+      "disabled": true,
       "settings": {
         "collections": [
           "sinter-brakes"
