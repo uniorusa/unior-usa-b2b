@@ -90,6 +90,43 @@
         "padding_bottom": 12
       }
     },
+    "29ba1a65-35c0-4ecc-aa8b-1e4f92a121c2": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/youtu.be\/ddSq425g-M0",
+        "cover_image": "shopify:\/\/shop_images\/Electric-Repair-Stand-Thumb-_2.jpg",
+        "description": "Link to YouTube ERS video",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "187fe1e1-0a12-47f5-a4f8-f1d5ddfde135": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16749516226796__187fe1e1-0a12-47f5-a4f8-f1d5ddfde135-1688377990464a351c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Designed and developed for technicians to work smarter, not harder. <br\/><br\/>The stand is constructed around a heavy-duty one-piece aluminum column, which gives great stability and at the same time holds all wires on the inside, so there's nothing in the way when working on a bike. <br\/><br\/>It's strong enough to lift even the heaviest bicycles to the desired height with ease, so the bicycle is always in the most ergonomic position to work on. <br\/><br\/>The Electric repair stand is not just powerful, but also smart. It features endless height adjust, but it can also lift or descend a bike automatically with a push of a button. It also stops on its own when the bike reaches the ground. <br\/><br\/>Thanks to the travel adjust limiters; you can limit its travel, so it always stops at the desired height. Built in safety system keeps the technician and the bicycle on the stand safe and makes sure nothing goes wrong.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16749516226796__187fe1e1-0a12-47f5-a4f8-f1d5ddfde135-1688377990464a351c-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "20e0e910-e718-4351-8c98-c271b4907847": {
       "type": "image-banner",
       "blocks": {
@@ -178,10 +215,32 @@
         "padding_bottom": 36
       }
     },
+    "774109a1-310a-46d6-9310-f7417725f7e7": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16749516226796__774109a1-310a-46d6-9310-f7417725f7e7-1688377990464a351c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Automatic stopping system with a build in safety feature to keep technician and bicycle on the stand safe<\/li><li>Endless height adjust<\/li><li>Travel adjust limiters<\/li><li>Main electricity supply cable coming in from the top of the stand, so nothing is in the work area<\/li><li>Hidden wires<\/li><li>Two USB A charging port<\/li><li>Equipped with Master shop repair clamp 1693.1M<\/li><li>Anti-slip clamp interface<\/li><li>Main column made of steel and bolted together creating a super rigid frame<\/li><li>Secures directly to the floor or on a heavy-duty metal fixed plate<\/li><li>Heavy-duty large fixed plate with floor leveling function<\/li><li>No assembly needed, just fix it in place, plug in the electricity and start working<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16749516226796__774109a1-310a-46d6-9310-f7417725f7e7-1688377990464a351c-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Also available",
         "heading_size": "h2",
         "products_to_show": 4,
         "columns_desktop": 4,
@@ -200,8 +259,11 @@
   },
   "order": [
     "main",
+    "29ba1a65-35c0-4ecc-aa8b-1e4f92a121c2",
+    "187fe1e1-0a12-47f5-a4f8-f1d5ddfde135",
     "20e0e910-e718-4351-8c98-c271b4907847",
     "0c047118-796c-4778-b28a-e712bd683581",
+    "774109a1-310a-46d6-9310-f7417725f7e7",
     "related-products"
   ]
 }
