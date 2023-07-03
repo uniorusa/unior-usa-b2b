@@ -87,7 +87,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/230530-trek-bike-build-170_3ab899b8-1764-4bfb-8861-2c22d9ecba5d.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
