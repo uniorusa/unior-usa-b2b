@@ -1,5 +1,79 @@
 {
   "sections": {
+    "ccece57d-71d9-48de-a64d-2fc751e4af52": {
+      "type": "featured-product",
+      "blocks": {
+        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-2": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_badges": false
+          }
+        },
+        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-3": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-4": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-6": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-0",
+        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-1",
+        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-2",
+        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-3",
+        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-4",
+        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-5",
+        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-6"
+      ],
+      "settings": {
+        "product": "electric-assist-workstand-1693el",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "3b87db72-e44b-4eaf-9183-6cc344a473d2": {
       "type": "featured-collection",
       "settings": {
@@ -134,6 +208,7 @@
     }
   },
   "order": [
+    "ccece57d-71d9-48de-a64d-2fc751e4af52",
     "3b87db72-e44b-4eaf-9183-6cc344a473d2",
     "featured_collection",
     "image_banner",
