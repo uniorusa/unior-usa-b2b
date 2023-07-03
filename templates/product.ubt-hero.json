@@ -90,6 +90,94 @@
         "padding_bottom": 12
       }
     },
+    "20e0e910-e718-4351-8c98-c271b4907847": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16749516226796__20e0e910-e718-4351-8c98-c271b4907847-16883772052532efdf-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--16749516226796__20e0e910-e718-4351-8c98-c271b4907847-16883772052532efdf-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--16749516226796__20e0e910-e718-4351-8c98-c271b4907847-16883772052532efdf-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16749516226796__20e0e910-e718-4351-8c98-c271b4907847-16883772052532efdf-0",
+        "template--16749516226796__20e0e910-e718-4351-8c98-c271b4907847-16883772052532efdf-1",
+        "template--16749516226796__20e0e910-e718-4351-8c98-c271b4907847-16883772052532efdf-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/230530-trek-bike-build-170_3ab899b8-1764-4bfb-8861-2c22d9ecba5d.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "0c047118-796c-4778-b28a-e712bd683581": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16749516226796__0c047118-796c-4778-b28a-e712bd683581-16883770959592c54a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Technical Specification",
+            "heading_size": "h1"
+          }
+        },
+        "template--16749516226796__0c047118-796c-4778-b28a-e712bd683581-16883770959592c54a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Measurement: W750xL750xH2072 mm<\/li><li>Weight: 106 kg (with a steel fixed plate)<\/li><li>Maximum height: 1780 mm<\/li><li>Load capacity: 400N (40kg)<\/li><li>Power: 0,25 kW<\/li><li>Steering voltage: 5 V<\/li><li>Input: 220-240 V; 50 Hz<\/li><li>Movement speed: 3.3 m\/min<\/li><li>IP rating: IP30 – inside use only<\/li><li>Noise level: 55 dB<\/li><li>CE compliant<br\/><br\/>L = 750mm<br\/>H = 2,078mm<br\/>H1 Max = 1,808mm<br\/>B = 750mm<br\/>H1 Min = 250mm<\/li><\/ul>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16749516226796__0c047118-796c-4778-b28a-e712bd683581-16883770959592c54a-0",
+        "template--16749516226796__0c047118-796c-4778-b28a-e712bd683581-16883770959592c54a-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1693EL_sketch_1_400_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -112,6 +200,8 @@
   },
   "order": [
     "main",
+    "20e0e910-e718-4351-8c98-c271b4907847",
+    "0c047118-796c-4778-b28a-e712bd683581",
     "related-products"
   ]
 }
