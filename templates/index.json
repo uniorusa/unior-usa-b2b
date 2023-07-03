@@ -70,7 +70,7 @@
       "settings": {
         "product": "electric-assist-workstand-1693el",
         "color_scheme": "background-1",
-        "secondary_background": false,
+        "secondary_background": true,
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -80,6 +80,22 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "1b512b21-8b1e-40a2-bb95-bca1a09f30e5": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/230530-trek-bike-build-170_3ab899b8-1764-4bfb-8861-2c22d9ecba5d.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "3b87db72-e44b-4eaf-9183-6cc344a473d2": {
@@ -217,6 +233,7 @@
   },
   "order": [
     "ccece57d-71d9-48de-a64d-2fc751e4af52",
+    "1b512b21-8b1e-40a2-bb95-bca1a09f30e5",
     "3b87db72-e44b-4eaf-9183-6cc344a473d2",
     "featured_collection",
     "image_banner",
