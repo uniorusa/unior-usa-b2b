@@ -16,6 +16,13 @@
             "heading_size": "h1"
           }
         },
+        "a766f9e1-227d-4099-977a-90e6c59b6966": {
+          "type": "text",
+          "settings": {
+            "text": "Learn all about our Electric Repair Stand and why it's the perfect stand for your workshop.",
+            "text_style": "body"
+          }
+        },
         "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-2": {
           "type": "price",
           "disabled": true,
@@ -53,6 +60,7 @@
       "block_order": [
         "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-0",
         "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-1",
+        "a766f9e1-227d-4099-977a-90e6c59b6966",
         "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-2",
         "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-3",
         "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-4",
