@@ -119,10 +119,10 @@
         "template--16749516226796__187fe1e1-0a12-47f5-a4f8-f1d5ddfde135-1688377990464a351c-1"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
         "color_scheme": "background-1",
-        "full_width": true,
+        "full_width": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -229,8 +229,8 @@
         "template--16749516226796__774109a1-310a-46d6-9310-f7417725f7e7-1688377990464a351c-1"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
