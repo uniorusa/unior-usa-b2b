@@ -1,5 +1,50 @@
 {
   "sections": {
+    "43e732e2-790b-4a6d-ae84-03d7596eb5b7": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Save on Tool Sets and Kits",
+            "heading_size": "h1"
+          }
+        },
+        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You can take 10% off any Tool Set or Kit with code KIT10<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Order Now",
+            "button_link": "https:\/\/b2b.uniorusa.com\/collections\/tool-sets"
+          }
+        }
+      },
+      "block_order": [
+        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-heading-1",
+        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-text-1",
+        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ETW_A5_Flyers_Landscape_2.1_2__Page_2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "3b87db72-e44b-4eaf-9183-6cc344a473d2": {
       "type": "featured-collection",
       "settings": {
@@ -60,38 +105,6 @@
         "padding_bottom": 36
       }
     },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "See Offers",
-            "button_link_1": "https:\/\/b2b.uniorusa.com\/collections\/special-offers?filter.v.price.gte=&filter.v.price.lte=&filter.p.vendor=Juice+Lubes&sort_by=best-selling",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "button"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/JL_Dealer_Pack_Promo-03.jpg",
-        "image_overlay_opacity": 10,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
     "32c72810-ae05-4dcf-95f6-b4b4005c0c22": {
       "type": "collection-list",
       "blocks": {
@@ -132,38 +145,38 @@
         "padding_bottom": 36
       }
     },
-    "43e732e2-790b-4a6d-ae84-03d7596eb5b7": {
+    "230514d1-bcc8-4251-9462-ee2f0a61a792": {
       "type": "image-with-text",
       "blocks": {
-        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-heading-1": {
+        "template--16664739381484__230514d1-bcc8-4251-9462-ee2f0a61a792-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Save on Tool Sets and Kits",
+            "heading": "Sinter Brake Pads",
             "heading_size": "h1"
           }
         },
-        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-text-1": {
+        "template--16664739381484__230514d1-bcc8-4251-9462-ee2f0a61a792-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>You can take 10% off any Tool Set or Kit with code KIT10<\/p>",
+            "text": "<p>Check out our pricing breaks and order now<\/p>",
             "text_style": "body"
           }
         },
-        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-button-1": {
+        "template--16664739381484__230514d1-bcc8-4251-9462-ee2f0a61a792-button-1": {
           "type": "button",
           "settings": {
-            "button_label": "Order Now",
-            "button_link": "https:\/\/b2b.uniorusa.com\/collections\/tool-sets"
+            "button_label": "Sinter Organic Brake Pads",
+            "button_link": "https:\/\/b2b.uniorusa.com\/collections\/sinter-brakes"
           }
         }
       },
       "block_order": [
-        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-heading-1",
-        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-text-1",
-        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-button-1"
+        "template--16664739381484__230514d1-bcc8-4251-9462-ee2f0a61a792-heading-1",
+        "template--16664739381484__230514d1-bcc8-4251-9462-ee2f0a61a792-text-1",
+        "template--16664739381484__230514d1-bcc8-4251-9462-ee2f0a61a792-button-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/ETW_A5_Flyers_Landscape_2.1_2__Page_2.jpg",
+        "image": "shopify:\/\/shop_images\/ETW_A5_Flyers_Landscape_2.1_2__Page_4.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -179,10 +192,10 @@
     }
   },
   "order": [
+    "43e732e2-790b-4a6d-ae84-03d7596eb5b7",
     "3b87db72-e44b-4eaf-9183-6cc344a473d2",
     "featured_collection",
-    "image_banner",
     "32c72810-ae05-4dcf-95f6-b4b4005c0c22",
-    "43e732e2-790b-4a6d-ae84-03d7596eb5b7"
+    "230514d1-bcc8-4251-9462-ee2f0a61a792"
   ]
 }
