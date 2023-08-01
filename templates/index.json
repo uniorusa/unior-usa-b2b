@@ -1,103 +1,5 @@
 {
   "sections": {
-    "ccece57d-71d9-48de-a64d-2fc751e4af52": {
-      "type": "featured-product",
-      "blocks": {
-        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-0": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-1": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "a766f9e1-227d-4099-977a-90e6c59b6966": {
-          "type": "text",
-          "settings": {
-            "text": "Learn all about our Electric Repair Stand and why it's the perfect stand for your workshop.",
-            "text_style": "body"
-          }
-        },
-        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-2": {
-          "type": "price",
-          "disabled": true,
-          "settings": {
-            "show_badges": false
-          }
-        },
-        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-3": {
-          "type": "variant_picker",
-          "disabled": true,
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-4": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-5": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-6": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-0",
-        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-1",
-        "a766f9e1-227d-4099-977a-90e6c59b6966",
-        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-2",
-        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-3",
-        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-4",
-        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-5",
-        "template--16664739381484__ccece57d-71d9-48de-a64d-2fc751e4af52-16883806842cbd90f2-6"
-      ],
-      "settings": {
-        "product": "electric-assist-workstand-1693el",
-        "color_scheme": "background-1",
-        "secondary_background": true,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1b512b21-8b1e-40a2-bb95-bca1a09f30e5": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/230530-trek-bike-build-170_3ab899b8-1764-4bfb-8861-2c22d9ecba5d.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "3b87db72-e44b-4eaf-9183-6cc344a473d2": {
       "type": "featured-collection",
       "settings": {
@@ -229,14 +131,58 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "43e732e2-790b-4a6d-ae84-03d7596eb5b7": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Save on Tool Sets and Kits",
+            "heading_size": "h1"
+          }
+        },
+        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You can take 10% off any Tool Set or Kit with code KIT10<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Order Now",
+            "button_link": "https:\/\/b2b.uniorusa.com\/collections\/tool-sets"
+          }
+        }
+      },
+      "block_order": [
+        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-heading-1",
+        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-text-1",
+        "template--16664739381484__43e732e2-790b-4a6d-ae84-03d7596eb5b7-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ETW_A5_Flyers_Landscape_2.1_2__Page_2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "ccece57d-71d9-48de-a64d-2fc751e4af52",
-    "1b512b21-8b1e-40a2-bb95-bca1a09f30e5",
     "3b87db72-e44b-4eaf-9183-6cc344a473d2",
     "featured_collection",
     "image_banner",
-    "32c72810-ae05-4dcf-95f6-b4b4005c0c22"
+    "32c72810-ae05-4dcf-95f6-b4b4005c0c22",
+    "43e732e2-790b-4a6d-ae84-03d7596eb5b7"
   ]
 }
