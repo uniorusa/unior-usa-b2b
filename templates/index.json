@@ -105,46 +105,6 @@
         "padding_bottom": 36
       }
     },
-    "32c72810-ae05-4dcf-95f6-b4b4005c0c22": {
-      "type": "collection-list",
-      "blocks": {
-        "template--16662198255852__32c72810-ae05-4dcf-95f6-b4b4005c0c22-1674193931df4b0c89-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "juice-lubes"
-          }
-        },
-        "template--16662198255852__32c72810-ae05-4dcf-95f6-b4b4005c0c22-1674193931df4b0c89-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "sinter-brakes"
-          }
-        },
-        "template--16662198255852__32c72810-ae05-4dcf-95f6-b4b4005c0c22-1674193931df4b0c89-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "bleedkit-com-bleed-kits"
-          }
-        }
-      },
-      "block_order": [
-        "template--16662198255852__32c72810-ae05-4dcf-95f6-b4b4005c0c22-1674193931df4b0c89-0",
-        "template--16662198255852__32c72810-ae05-4dcf-95f6-b4b4005c0c22-1674193931df4b0c89-1",
-        "template--16662198255852__32c72810-ae05-4dcf-95f6-b4b4005c0c22-1674193931df4b0c89-2"
-      ],
-      "settings": {
-        "title": "Our Partner Brands",
-        "heading_size": "h2",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "230514d1-bcc8-4251-9462-ee2f0a61a792": {
       "type": "image-with-text",
       "blocks": {
@@ -189,13 +149,84 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "32c72810-ae05-4dcf-95f6-b4b4005c0c22": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16662198255852__32c72810-ae05-4dcf-95f6-b4b4005c0c22-1674193931df4b0c89-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "juice-lubes"
+          }
+        },
+        "template--16662198255852__32c72810-ae05-4dcf-95f6-b4b4005c0c22-1674193931df4b0c89-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sinter-brakes"
+          }
+        },
+        "template--16662198255852__32c72810-ae05-4dcf-95f6-b4b4005c0c22-1674193931df4b0c89-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bleedkit-com-bleed-kits"
+          }
+        }
+      },
+      "block_order": [
+        "template--16662198255852__32c72810-ae05-4dcf-95f6-b4b4005c0c22-1674193931df4b0c89-0",
+        "template--16662198255852__32c72810-ae05-4dcf-95f6-b4b4005c0c22-1674193931df4b0c89-1",
+        "template--16662198255852__32c72810-ae05-4dcf-95f6-b4b4005c0c22-1674193931df4b0c89-2"
+      ],
+      "settings": {
+        "title": "Our Partner Brands",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3b81e746-2e27-4663-ae70-41460fdbe6a0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Brake Pads",
+        "heading_size": "h1",
+        "description": "<p>We have you covered, choose your compounds and styles<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "sinter-brakes",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "show_badges": false,
+        "card_style": "vertical",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "43e732e2-790b-4a6d-ae84-03d7596eb5b7",
     "3b87db72-e44b-4eaf-9183-6cc344a473d2",
     "featured_collection",
+    "230514d1-bcc8-4251-9462-ee2f0a61a792",
     "32c72810-ae05-4dcf-95f6-b4b4005c0c22",
-    "230514d1-bcc8-4251-9462-ee2f0a61a792"
+    "3b81e746-2e27-4663-ae70-41460fdbe6a0"
   ]
 }
