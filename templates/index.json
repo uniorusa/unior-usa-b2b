@@ -45,6 +45,51 @@
         "padding_bottom": 36
       }
     },
+    "77789a05-2584-436f-845c-af05088905e0": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "'Best for tool quality - Cycling Weekly'",
+            "heading_size": "h1"
+          }
+        },
+        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In a test of multitools, Unior recognised as best for actual tool quality. <a href=\"\/products\/unior-multitool-euro17\" target=\"_blank\" title=\"Multitool EURO17 - 1655EURO17-US\">See the EURO17 now<\/a>.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read Review",
+            "button_link": "https:\/\/www.cyclingweekly.com\/news\/product-news\/best-cycling-multi-tool-buyers-guide-114119"
+          }
+        }
+      },
+      "block_order": [
+        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-heading-1",
+        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-text-1",
+        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Cycling-Weekly-Email-Header.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "3b87db72-e44b-4eaf-9183-6cc344a473d2": {
       "type": "featured-collection",
       "settings": {
@@ -219,60 +264,15 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "77789a05-2584-436f-845c-af05088905e0": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "'Best for tool quality - Cycling Weekly'",
-            "heading_size": "h1"
-          }
-        },
-        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>In a test of multitools, Unior recognised as best for actual tool quality. <a href=\"\/products\/unior-multitool-euro17\" target=\"_blank\" title=\"Multitool EURO17 - 1655EURO17-US\">See the EURO17 now<\/a>.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read Review",
-            "button_link": "https:\/\/www.cyclingweekly.com\/news\/product-news\/best-cycling-multi-tool-buyers-guide-114119"
-          }
-        }
-      },
-      "block_order": [
-        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-heading-1",
-        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-text-1",
-        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-button-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Cycling-Weekly-Email-Header.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "43e732e2-790b-4a6d-ae84-03d7596eb5b7",
+    "77789a05-2584-436f-845c-af05088905e0",
     "3b87db72-e44b-4eaf-9183-6cc344a473d2",
     "featured_collection",
     "230514d1-bcc8-4251-9462-ee2f0a61a792",
     "3b81e746-2e27-4663-ae70-41460fdbe6a0",
-    "32c72810-ae05-4dcf-95f6-b4b4005c0c22",
-    "77789a05-2584-436f-845c-af05088905e0"
+    "32c72810-ae05-4dcf-95f6-b4b4005c0c22"
   ]
 }
