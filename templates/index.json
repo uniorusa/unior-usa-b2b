@@ -68,12 +68,21 @@
             "button_label": "Read Review",
             "button_link": "https:\/\/www.cyclingweekly.com\/news\/product-news\/best-cycling-multi-tool-buyers-guide-114119"
           }
+        },
+        "8b868a1f-b061-4cf7-a350-5576960b47d4": {
+          "type": "caption",
+          "settings": {
+            "caption": "GET 15% OFF ANY 20 TOOLS - USE CODE MULTIBUY AT CHECKOUT",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
         }
       },
       "block_order": [
         "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-heading-1",
         "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-text-1",
-        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-button-1"
+        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-button-1",
+        "8b868a1f-b061-4cf7-a350-5576960b47d4"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Cycling-Weekly-Email-Header.jpg",
