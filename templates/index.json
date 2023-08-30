@@ -182,12 +182,21 @@
             "button_label": "Sinter Organic Brake Pads",
             "button_link": "https:\/\/b2b.uniorusa.com\/collections\/sinter-brakes"
           }
+        },
+        "172b8591-26d1-4dae-aeed-4e88004a7336": {
+          "type": "caption",
+          "settings": {
+            "caption": "PLUS USE CODE SINTERSEPTEMBER for extra 10% off 20+ pads",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
         }
       },
       "block_order": [
         "template--16664739381484__230514d1-bcc8-4251-9462-ee2f0a61a792-heading-1",
         "template--16664739381484__230514d1-bcc8-4251-9462-ee2f0a61a792-text-1",
-        "template--16664739381484__230514d1-bcc8-4251-9462-ee2f0a61a792-button-1"
+        "template--16664739381484__230514d1-bcc8-4251-9462-ee2f0a61a792-button-1",
+        "172b8591-26d1-4dae-aeed-4e88004a7336"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/ETW_A5_Flyers_Landscape_2.1_2__Page_4.jpg",
