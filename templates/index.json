@@ -282,6 +282,16 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "f63566b6-8368-474c-8e4f-9ba1140cd4e0": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Call us toll free on 866 399 2453 or leave a note",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -291,6 +301,7 @@
     "featured_collection",
     "230514d1-bcc8-4251-9462-ee2f0a61a792",
     "3b81e746-2e27-4663-ae70-41460fdbe6a0",
-    "32c72810-ae05-4dcf-95f6-b4b4005c0c22"
+    "32c72810-ae05-4dcf-95f6-b4b4005c0c22",
+    "f63566b6-8368-474c-8e4f-9ba1140cd4e0"
   ]
 }
