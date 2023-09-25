@@ -1,5 +1,42 @@
 {
   "sections": {
+    "4600cf89-aab4-40bc-881e-01d3c5cea348": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16664739381484__4600cf89-aab4-40bc-881e-01d3c5cea348-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "866 399 2453",
+            "heading_size": "h1"
+          }
+        },
+        "template--16664739381484__4600cf89-aab4-40bc-881e-01d3c5cea348-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Call Toll Free to place an order<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16664739381484__4600cf89-aab4-40bc-881e-01d3c5cea348-heading-1",
+        "template--16664739381484__4600cf89-aab4-40bc-881e-01d3c5cea348-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1754_629377_usage_4_1024.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "43e732e2-790b-4a6d-ae84-03d7596eb5b7": {
       "type": "image-with-text",
       "blocks": {
@@ -35,60 +72,6 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "77789a05-2584-436f-845c-af05088905e0": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "'Best for tool quality - Cycling Weekly'",
-            "heading_size": "h1"
-          }
-        },
-        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>In a test of multitools, Unior recognised as best for actual tool quality. <a href=\"\/products\/unior-multitool-euro17\" target=\"_blank\" title=\"Multitool EURO17 - 1655EURO17-US\">See the EURO17 now<\/a>.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read Review",
-            "button_link": "https:\/\/www.cyclingweekly.com\/news\/product-news\/best-cycling-multi-tool-buyers-guide-114119"
-          }
-        },
-        "8b868a1f-b061-4cf7-a350-5576960b47d4": {
-          "type": "caption",
-          "settings": {
-            "caption": "GET 15% OFF ANY 20 TOOLS - USE CODE MULTIBUY AT CHECKOUT",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-heading-1",
-        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-text-1",
-        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-button-1",
-        "8b868a1f-b061-4cf7-a350-5576960b47d4"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Cycling-Weekly-Email-Header.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
@@ -283,25 +266,69 @@
         "padding_bottom": 36
       }
     },
-    "f63566b6-8368-474c-8e4f-9ba1140cd4e0": {
-      "type": "contact-form",
+    "77789a05-2584-436f-845c-af05088905e0": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "'Best for tool quality - Cycling Weekly'",
+            "heading_size": "h1"
+          }
+        },
+        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In a test of multitools, Unior recognised as best for actual tool quality. <a href=\"\/products\/unior-multitool-euro17\" target=\"_blank\" title=\"Multitool EURO17 - 1655EURO17-US\">See the EURO17 now<\/a>.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read Review",
+            "button_link": "https:\/\/www.cyclingweekly.com\/news\/product-news\/best-cycling-multi-tool-buyers-guide-114119"
+          }
+        },
+        "8b868a1f-b061-4cf7-a350-5576960b47d4": {
+          "type": "caption",
+          "settings": {
+            "caption": "GET 15% OFF ANY 20 TOOLS - USE CODE MULTIBUY AT CHECKOUT",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-heading-1",
+        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-text-1",
+        "template--16664739381484__77789a05-2584-436f-845c-af05088905e0-button-1",
+        "8b868a1f-b061-4cf7-a350-5576960b47d4"
+      ],
       "settings": {
-        "heading": "Call us toll free on 866 399 2453 or leave a note",
-        "heading_size": "h1",
+        "image": "shopify:\/\/shop_images\/Cycling-Weekly-Email-Header.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
         "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
+    "4600cf89-aab4-40bc-881e-01d3c5cea348",
     "43e732e2-790b-4a6d-ae84-03d7596eb5b7",
-    "77789a05-2584-436f-845c-af05088905e0",
     "3b87db72-e44b-4eaf-9183-6cc344a473d2",
     "featured_collection",
     "230514d1-bcc8-4251-9462-ee2f0a61a792",
     "3b81e746-2e27-4663-ae70-41460fdbe6a0",
     "32c72810-ae05-4dcf-95f6-b4b4005c0c22",
-    "f63566b6-8368-474c-8e4f-9ba1140cd4e0"
+    "77789a05-2584-436f-845c-af05088905e0"
   ]
 }
