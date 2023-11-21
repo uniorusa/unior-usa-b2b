@@ -4,12 +4,11 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "disabled": true,
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Closed Monday 29th May for Memorial Day. Back Tuesday!",
+            "text": "Holiday Closures - We will be closed for Thanksgiving on 11\/23 & 11\/24",
             "link": ""
           }
         }
