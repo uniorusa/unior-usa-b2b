@@ -165,8 +165,7 @@
           "edit_account_link_text": "Edit account",
           "edit_account_heading": "Edit account",
           "edit_account_back_link_text": "Back to account",
-          "enable_js_api": true,
-          "js_api_version": "4.13.0"
+          "enable_js_api": true
         }
       },
       "855628211100114053": {
@@ -177,6 +176,12 @@
       },
       "9094328589753815681": {
         "type": "shopify:\/\/apps\/hextom-free-shipping-bar\/blocks\/fsb-embeded-block\/7ef5d9af-75a2-45c7-9b1b-f9240ee488e9",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "9008193484254126213": {
+        "type": "shopify:\/\/apps\/orderlogic-min-max-limits\/blocks\/orderlogic\/02463cc1-4876-4a68-8865-248003957801",
         "disabled": false,
         "settings": {
         }
