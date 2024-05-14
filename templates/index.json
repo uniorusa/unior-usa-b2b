@@ -1,7 +1,52 @@
 {
   "sections": {
+    "image_with_text_8CJUfa": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_wzLcxH": {
+          "type": "heading",
+          "settings": {
+            "heading": "50% off Juice Lubes",
+            "heading_size": "h1"
+          }
+        },
+        "text_HAjyML": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discount applied at checkout.  Grab  a margin booster for summer season.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_xrGDh7": {
+          "type": "button",
+          "settings": {
+            "button_label": "Order Now",
+            "button_link": "shopify:\/\/collections\/juice-lubes"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wzLcxH",
+        "text_HAjyML",
+        "button_xrGDh7"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/a789ac8a-53d5-4bd5-b3ec-b7fbf6cc50f1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
   },
   "order": [
-
+    "image_with_text_8CJUfa"
   ]
 }
