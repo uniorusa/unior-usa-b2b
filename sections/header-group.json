@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -8,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Holiday Closures - We will be closed from 12\/22 until 12\/26",
+            "text": "Holiday Closures - We will be closed 4th and 5th of July",
             "link": ""
           }
         }
@@ -16,7 +25,6 @@
       "block_order": [
         "announcement-bar-0"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "accent-1",
         "show_line_separator": true,
