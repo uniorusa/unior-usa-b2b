@@ -1,8 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/UBT_Logotype_1_-_RED.png",
+    "logo": "shopify://shop_images/UBT_Logotype_1_-_RED.png",
     "logo_width": 190,
-    "favicon": "shopify:\/\/shop_images\/UBT_Logomark_-_RED.png",
+    "favicon": "shopify://shop_images/UBT_Logomark_-_RED.png",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#d71f2a",
     "gradient_accent_1": "",
@@ -109,10 +118,10 @@
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
     "brand_headline": "Unior Bike Tools - Made For Work",
-    "brand_image": "shopify:\/\/shop_images\/DSC07980_Small_f75bde89-868d-462c-802c-ece03be6c80f.jpg",
-    "social_facebook_link": "https:\/\/facebook.com\/uniorusa",
-    "social_instagram_link": "https:\/\/www.instagram.com\/uniorusa\/",
-    "social_youtube_link": "https:\/\/www.youtube.com\/uniorbiketoolsusa",
+    "brand_image": "shopify://shop_images/DSC07980_Small_f75bde89-868d-462c-802c-ece03be6c80f.jpg",
+    "social_facebook_link": "https://facebook.com/uniorusa",
+    "social_instagram_link": "https://www.instagram.com/uniorusa/",
+    "social_youtube_link": "https://www.youtube.com/uniorbiketoolsusa",
     "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",
@@ -124,13 +133,13 @@
     "predictive_search_show_price": false,
     "regular_price_prefix": "Regular:",
     "sale_price_prefix": "Sale:",
-    "map_price_prefix": "MAP\/MSRP:",
+    "map_price_prefix": "MAP/MSRP:",
     "currency_code_enabled": false,
     "cart_type": "page",
     "show_vendor": true,
     "show_cart_note": true,
     "cart_drawer_collection": "best-sellers",
-    "checkout_logo_image": "shopify:\/\/shop_images\/UBT_Logotype_1_-_RED.png",
+    "checkout_logo_image": "shopify://shop_images/UBT_Logotype_1_-_RED.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "large",
     "checkout_input_background_color_mode": "white",
@@ -152,12 +161,10 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "9776720720251544092": {
-        "type": "shopify:\/\/apps\/helium-customer-fields\/blocks\/app-embed\/bab58598-3e6a-4377-aaaa-97189b15f131",
+        "type": "shopify://apps/helium-customer-fields/blocks/app-embed/bab58598-3e6a-4377-aaaa-97189b15f131",
         "disabled": false,
         "settings": {
           "registration_form_id": "0kte62",
@@ -169,21 +176,47 @@
         }
       },
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "9094328589753815681": {
-        "type": "shopify:\/\/apps\/hextom-free-shipping-bar\/blocks\/fsb-embeded-block\/7ef5d9af-75a2-45c7-9b1b-f9240ee488e9",
+        "type": "shopify://apps/hextom-free-shipping-bar/blocks/fsb-embeded-block/7ef5d9af-75a2-45c7-9b1b-f9240ee488e9",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "9008193484254126213": {
-        "type": "shopify:\/\/apps\/orderlogic-min-max-limits\/blocks\/orderlogic\/02463cc1-4876-4a68-8865-248003957801",
+        "type": "shopify://apps/orderlogic-min-max-limits/blocks/orderlogic/02463cc1-4876-4a68-8865-248003957801",
+        "disabled": false,
+        "settings": {}
+      },
+      "3688984247845132352": {
+        "type": "shopify://apps/smart-carts/blocks/better-carts-block/d55da88c-ae7f-4d11-a8b4-635b3be70712",
         "disabled": false,
         "settings": {
+          "only-cart": false,
+          "margin-bottom": 10,
+          "margin-right": 10,
+          "header_title": "Your cart",
+          "title-font-size": 30,
+          "header_subtitle": "",
+          "subtitle-font-size": 12,
+          "theme_style": "light",
+          "primary-color": "#000000",
+          "secondary-color": "#FFFFFF",
+          "baner-bg-color": "primary",
+          "baner-font-color": "secondary",
+          "button-bg-color": "primary",
+          "button-font-color": "secondary",
+          "border-container-styles": "10",
+          "border-cards-styles": "10",
+          "border-buttons-styles": "10",
+          "border-inputs-styles": "10",
+          "total-font-color": "primary",
+          "total-only_price": "false",
+          "launcher-default-icons": "cart",
+          "launcher-color": "primary",
+          "border-launcher-styles": "50"
         }
       }
     }
