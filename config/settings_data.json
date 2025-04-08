@@ -189,35 +189,6 @@
         "type": "shopify://apps/orderlogic-min-max-limits/blocks/orderlogic/02463cc1-4876-4a68-8865-248003957801",
         "disabled": false,
         "settings": {}
-      },
-      "3688984247845132352": {
-        "type": "shopify://apps/smart-carts/blocks/better-carts-block/d55da88c-ae7f-4d11-a8b4-635b3be70712",
-        "disabled": false,
-        "settings": {
-          "only-cart": false,
-          "margin-bottom": 10,
-          "margin-right": 10,
-          "header_title": "Your cart",
-          "title-font-size": 30,
-          "header_subtitle": "",
-          "subtitle-font-size": 12,
-          "theme_style": "light",
-          "primary-color": "#000000",
-          "secondary-color": "#FFFFFF",
-          "baner-bg-color": "primary",
-          "baner-font-color": "secondary",
-          "button-bg-color": "primary",
-          "button-font-color": "secondary",
-          "border-container-styles": "10",
-          "border-cards-styles": "10",
-          "border-buttons-styles": "10",
-          "border-inputs-styles": "10",
-          "total-font-color": "primary",
-          "total-only_price": "false",
-          "launcher-default-icons": "cart",
-          "launcher-color": "primary",
-          "border-launcher-styles": "50"
-        }
       }
     }
   },
