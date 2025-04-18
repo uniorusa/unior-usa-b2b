@@ -16,6 +16,7 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "We're heading to Sea Otter! Booth S214/S225.  Shipping will be paused during this time.",
             "link": ""
