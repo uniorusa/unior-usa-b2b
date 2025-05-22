@@ -411,41 +411,15 @@ function showSinterusaPopup() {
         ">&times;</button>
         
         <h2 style="margin-bottom: 20px; color: #333;">
-          Welcome from Sinter USA!
+          Important Notice
         </h2>
         
-        <p style="margin-bottom: 20px; color: #666; line-height: 1.5;">
-          Thanks for visiting us from Sinter USA! Enjoy a special discount on your order.
+        <p style="margin-bottom: 30px; color: #333; line-height: 1.6; font-size: 16px;">
+          Please note that Euro Tool Works, LLC is the authorized distributor for Sinter brake pads in North America.
         </p>
         
-        <div style="margin-bottom: 20px;">
-          <span style="
-            background: #ff6b6b;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 18px;
-          ">
-            SINTER15 - 15% OFF
-          </span>
-        </div>
-        
-        <button id="claim-discount" style="
-          background: #28a745;
-          color: white;
-          padding: 12px 30px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 16px;
-          margin-right: 10px;
-        ">
-          Shop Now
-        </button>
-        
         <button id="close-popup-btn" style="
-          background: #6c757d;
+          background: #007bff;
           color: white;
           padding: 12px 30px;
           border: none;
@@ -453,7 +427,7 @@ function showSinterusaPopup() {
           cursor: pointer;
           font-size: 16px;
         ">
-          Maybe Later
+          Understood
         </button>
       </div>
     </div>
@@ -466,7 +440,6 @@ function showSinterusaPopup() {
   const overlay = document.getElementById('sinterusa-popup-overlay');
   const closeBtn = document.getElementById('close-popup');
   const closeBtnBottom = document.getElementById('close-popup-btn');
-  const claimBtn = document.getElementById('claim-discount');
   
   // Close popup functions
   function closePopup() {
@@ -479,14 +452,6 @@ function showSinterusaPopup() {
   closeBtnBottom.addEventListener('click', closePopup);
   overlay.addEventListener('click', (e) => {
     if (e.target === overlay) closePopup();
-  });
-  
-  // Claim discount action
-  claimBtn.addEventListener('click', () => {
-    // Redirect to shop or apply discount code
-    // You can customize this based on your needs
-    window.location.href = '/collections/all?discount=SINTER15';
-    closePopup();
   });
   
   // Auto-close after 30 seconds (optional)
