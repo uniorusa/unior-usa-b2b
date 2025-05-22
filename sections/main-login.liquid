@@ -162,16 +162,25 @@
   <!-- SinterUSA Referral Pop-up -->
 <div id="sinter-popup" style="display:none; position:fixed; top:30%; left:50%; transform:translate(-50%, -50%); background:white; padding:20px; border:1px solid #ccc; box-shadow:0 4px 8px rgba(0,0,0,0.2); z-index:9999; max-width: 90%; width: 300px; text-align:center;">
   <p style="margin-bottom: 20px;">Sinter brake pads are imported and distributed by Euro Tool Works LLC</p>
-  <button onclick="document.getElementById('sinter-popup').style.display='none'" style="padding: 8px 16px; background: #000; color: #fff; border: none; cursor: pointer;">OK</button>
+  <button id="sinter-popup-ok" style="padding: 8px 16px; background: #000; color: #fff; border: none; cursor: pointer;">OK</button>
 </div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    if (document.referrer.includes("www.sinterusa.com")) {
+    const referrerIsSinter = document.referrer.includes("sinterusa.com");
+    const popupSeen = sessionStorage.getItem("sinterPopupShown");
+
+    if (referrerIsSinter && !popupSeen) {
       document.getElementById("sinter-popup").style.display = "block";
+
+      document.getElementById("sinter-popup-ok").addEventListener("click", function () {
+        document.getElementById("sinter-popup").style.display = "none";
+        sessionStorage.setItem("sinterPopupShown", "true");
+      });
     }
   });
 </script>
+
 </div>
 
 {% schema %}
