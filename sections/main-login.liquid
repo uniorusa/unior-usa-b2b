@@ -167,28 +167,25 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const referrer = document.referrer;
-    const referrerIsSinter = referrer.includes("sinterusa.com");
-    const popupSeen = sessionStorage.getItem("sinterPopupShown");
+    const cameFromSinter = localStorage.getItem("cameFromSinter");
 
-    console.log("Referrer:", referrer);
-    console.log("Referrer is from sinterusa.com:", referrerIsSinter);
-    console.log("Popup already shown this session:", popupSeen);
+    console.log("LocalStorage check: cameFromSinter =", cameFromSinter);
 
-    if (referrerIsSinter && !popupSeen) {
-      console.log("Showing Sinter pop-up.");
+    if (cameFromSinter === "true") {
+      console.log("Displaying Sinter pop-up.");
       document.getElementById("sinter-popup").style.display = "block";
 
       document.getElementById("sinter-popup-ok").addEventListener("click", function () {
-        console.log("User clicked OK. Hiding pop-up and storing session flag.");
+        console.log("User dismissed the Sinter pop-up. Clearing localStorage.");
         document.getElementById("sinter-popup").style.display = "none";
-        sessionStorage.setItem("sinterPopupShown", "true");
+        localStorage.removeItem("cameFromSinter");
       });
     } else {
-      console.log("Sinter pop-up will not be shown.");
+      console.log("No Sinter flag set — pop-up not shown.");
     }
   });
 </script>
+
 
 </div>
 
