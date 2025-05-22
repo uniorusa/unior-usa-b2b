@@ -322,5 +322,212 @@
         <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
       {%- endif -%}
     {% endunless %}
+<script>
+  // Step 1: Referral Detection Script
+// Add this to the page that receives traffic from sinterusa.com
+function trackReferral() {
+  const referrer = document.referrer;
+  const urlParams = new URLSearchParams(window.location.search);
+  
+  // Check if user came from sinterusa.com (referrer or URL parameter)
+  if (referrer.includes('sinterusa.com') || urlParams.get('ref') === 'sinterusa') {
+    // Store in localStorage (persists across browser sessions)
+    localStorage.setItem('sinterusa_referral', 'true');
+    localStorage.setItem('sinterusa_referral_time', Date.now().toString());
+    
+    // Also store as cookie (alternative method, expires in 30 days)
+    document.cookie = "sinterusa_referral=true; max-age=" + (30 * 24 * 60 * 60) + "; path=/";
+    
+    console.log('Sinterusa referral tracked');
+  }
+}
+
+// Step 2: Popup Display Script
+// Add this to your Shopify store pages where you want the popup to appear
+function checkAndShowPopup() {
+  // Check localStorage first
+  const hasReferral = localStorage.getItem('sinterusa_referral');
+  const referralTime = localStorage.getItem('sinterusa_referral_time');
+  
+  // Alternative: Check cookie
+  const cookieReferral = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('sinterusa_referral='))
+    ?.split('=')[1];
+  
+  // Show popup if referral exists and is recent (within 24 hours)
+  const twentyFourHours = 24 * 60 * 60 * 1000;
+  const isRecentReferral = referralTime && (Date.now() - parseInt(referralTime)) < twentyFourHours;
+  
+  if ((hasReferral || cookieReferral) && isRecentReferral) {
+    showSinterusaPopup();
+    
+    // Optional: Clear the referral after showing popup once
+    // localStorage.removeItem('sinterusa_referral');
+    // document.cookie = "sinterusa_referral=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+  }
+}
+
+// Step 3: Popup Creation and Display
+function showSinterusaPopup() {
+  // Check if popup was already shown in this session
+  if (sessionStorage.getItem('sinterusa_popup_shown')) {
+    return;
+  }
+  
+  // Create popup HTML
+  const popupHTML = `
+    <div id="sinterusa-popup-overlay" style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 10000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    ">
+      <div id="sinterusa-popup" style="
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 500px;
+        width: 90%;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        position: relative;
+      ">
+        <button id="close-popup" style="
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          background: none;
+          border: none;
+          font-size: 24px;
+          cursor: pointer;
+          color: #666;
+        ">&times;</button>
+        
+        <h2 style="margin-bottom: 20px; color: #333;">
+          Welcome from Sinter USA!
+        </h2>
+        
+        <p style="margin-bottom: 20px; color: #666; line-height: 1.5;">
+          Thanks for visiting us from Sinter USA! Enjoy a special discount on your order.
+        </p>
+        
+        <div style="margin-bottom: 20px;">
+          <span style="
+            background: #ff6b6b;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 18px;
+          ">
+            SINTER15 - 15% OFF
+          </span>
+        </div>
+        
+        <button id="claim-discount" style="
+          background: #28a745;
+          color: white;
+          padding: 12px 30px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+          margin-right: 10px;
+        ">
+          Shop Now
+        </button>
+        
+        <button id="close-popup-btn" style="
+          background: #6c757d;
+          color: white;
+          padding: 12px 30px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+        ">
+          Maybe Later
+        </button>
+      </div>
+    </div>
+  `;
+  
+  // Add popup to page
+  document.body.insertAdjacentHTML('beforeend', popupHTML);
+  
+  // Add event listeners
+  const overlay = document.getElementById('sinterusa-popup-overlay');
+  const closeBtn = document.getElementById('close-popup');
+  const closeBtnBottom = document.getElementById('close-popup-btn');
+  const claimBtn = document.getElementById('claim-discount');
+  
+  // Close popup functions
+  function closePopup() {
+    overlay.remove();
+    sessionStorage.setItem('sinterusa_popup_shown', 'true');
+  }
+  
+  // Event listeners
+  closeBtn.addEventListener('click', closePopup);
+  closeBtnBottom.addEventListener('click', closePopup);
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closePopup();
+  });
+  
+  // Claim discount action
+  claimBtn.addEventListener('click', () => {
+    // Redirect to shop or apply discount code
+    // You can customize this based on your needs
+    window.location.href = '/collections/all?discount=SINTER15';
+    closePopup();
+  });
+  
+  // Auto-close after 30 seconds (optional)
+  setTimeout(() => {
+    if (document.getElementById('sinterusa-popup-overlay')) {
+      closePopup();
+    }
+  }, 30000);
+}
+
+// Step 4: Initialize the system
+document.addEventListener('DOMContentLoaded', function() {
+  // Track referral on page load
+  trackReferral();
+  
+  // Check and show popup after a short delay
+  setTimeout(checkAndShowPopup, 1000);
+});
+
+// Step 5: Utility functions for managing referral data
+const SinterusaReferral = {
+  // Clear all referral data
+  clear: function() {
+    localStorage.removeItem('sinterusa_referral');
+    localStorage.removeItem('sinterusa_referral_time');
+    document.cookie = "sinterusa_referral=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+    sessionStorage.removeItem('sinterusa_popup_shown');
+  },
+  
+  // Check if user has referral
+  hasReferral: function() {
+    return localStorage.getItem('sinterusa_referral') === 'true';
+  },
+  
+  // Manually trigger popup (for testing)
+  showPopup: function() {
+    sessionStorage.removeItem('sinterusa_popup_shown');
+    showSinterusaPopup();
+  }
+};
+</script>
+
   </body>
 </html>
